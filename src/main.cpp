@@ -1,7 +1,10 @@
 #include <cstdint>
 #include <fstream>
+#include <functional>
 #include <iostream>
 #include <memory>
+#include <stdexcept>
+#include <vector>
 #include "Token.hpp"
 #include "AST.hpp"
 
@@ -14,7 +17,54 @@ static std::unique_ptr<NumberExpressionAST> parseNumberExpression() {
     return result;
 }
 
+static std::unique_ptr<ExpressAST> parseExpression(std::function<char()> getchar){
+  return nullptr; // TODO fix it
+}
 
+static std::unique_ptr<ExpressAST> parseIdentifierExpression(std::function<char()> getchar){
+  std::string identifierName = identifier;
+  getToken(getchar);
+  if (lastChar != '(') { // not call, variable expression
+    return std::make_unique<VariableExprAST>(identifierName);
+  } else {
+    // call expression
+    getToken(getchar);
+    std::vector<std::unique_ptr<ExpressAST>> args;
+    if (currentToken != ')') {
+      while (true) {
+        if (auto arg = parseExpression(getchar)) {
+          args.push_back(arg);
+        } else {
+          return nullptr;
+        }
+
+        if(lastChar == ')') {
+          break;
+        }
+
+        if (lastChar != ',') {
+          throw std::runtime_error("arguments expression error");
+        }
+        getToken(getchar);
+      }
+    }
+    return std::make_unique<CallExprAST>(identifierName, args);
+  }
+}
+
+// parenexpr ::= '(' expression ')'
+static std::unique_ptr<ExpressAST> parseParenExpression(std::function<char()> getchar){
+  getToken(getchar); // eat (
+  auto v = parseExpression(getchar);
+  if (!v) {
+    return nullptr;
+  } else {
+    if(static_cast<char>(getToken(getchar)) != ')') {
+      throw std::runtime_error("incorrect () expression");
+    }
+  }
+  return v;
+}
 
 
 int main(int, char **) {
