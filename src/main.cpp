@@ -33,7 +33,7 @@ static std::unique_ptr<ExpressAST> parseIdentifierExpression(std::function<char(
     if (currentToken != ')') {
       while (true) {
         if (auto arg = parseExpression(getchar)) {
-          args.push_back(arg);
+          args.push_back(std::move(arg));
         } else {
           return nullptr;
         }
@@ -48,7 +48,7 @@ static std::unique_ptr<ExpressAST> parseIdentifierExpression(std::function<char(
         getToken(getchar);
       }
     }
-    return std::make_unique<CallExprAST>(identifierName, args);
+    return std::make_unique<CallExprAST>(identifierName, std::move(args));
   }
 }
 
