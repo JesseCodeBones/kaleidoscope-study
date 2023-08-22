@@ -22,10 +22,9 @@ enum Token : int32_t {
 
 static std::string identifier;
 static double numbValue;
-static char lastChar;
+static char lastChar = ' ';
 
 static int getToken(std::function<char()> getchar) {
-  lastChar = ' ';
   while (isspace(lastChar)) {
     lastChar = getchar();
   }

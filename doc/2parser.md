@@ -7,6 +7,26 @@ public:
 };
 ```
 
+### Token的获取技巧
+首先是要有两个数据在追踪token 和 char， `lastChar`和`currentToken`.  
+currentToken和lastChar是步进式关系。  
+例如 `(3+4)`  
+`lastChar = (, currentToken = null`  
+=>`lastChar = 3, currentToken = (`  
+=> `lastChar = +, currentToken = Number`  
+=> `lastChar = 4, currentToken = +`  
+=> `lastChar = ), currentToken = Number`  
+=> `lastChar = EOF, currentToken = )`  
+=> `lastChar = null, currentToken = EOF`  
+
+这样做的好处是，当我们步进的时候，我们可以有一步缓存，比如  
+```C++
+// Okay, we know this is a binop.
+int BinOp = CurTok;
+getNextToken();  // eat binop
+```
+我们可以拿到数值，然后在eat掉，进入下一个。
+
 ### 其他AST子类
 
 比如binary expression  

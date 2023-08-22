@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0.0)
 project(kaleidoscope-study VERSION 0.1.0 LANGUAGES C CXX)
-
+set(LLVM_REQUIRED_CXX_STANDARD 17)
 include(CTest)
 enable_testing()
 aux_source_directory(src sources)

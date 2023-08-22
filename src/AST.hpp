@@ -9,7 +9,7 @@ public:
   virtual ~ExpressAST() {}
 };
 
-class NumberExpressionAST {
+class NumberExpressionAST : public ExpressAST{
 public:
   NumberExpressionAST(double Val) : value(Val) {}
   virtual ~NumberExpressionAST() {}
