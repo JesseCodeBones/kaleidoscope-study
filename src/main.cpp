@@ -18,8 +18,15 @@ static int getNextToken(std::function<char()> getchar) {
   return currentToken = getToken(getchar);
 }
 
-static std::unique_ptr<ExpressAST> parseNumberExpression() {
+static PrecedenceParser precedenceParser;
+
+static int getTokenPrecedence() {
+  return precedenceParser.getOpPrecedence(static_cast<char>(currentToken));
+}
+
+static std::unique_ptr<ExpressAST> parseNumberExpression(std::function<char()> getchar) {
   auto result = std::make_unique<NumberExpressionAST>(numbValue);
+  getNextToken(getchar); // consumed this number token
   return std::move(result);
 }
 
@@ -35,7 +42,7 @@ static std::unique_ptr<ExpressAST> parsePrimary(std::function<char()> getchar) {
   case Token::tok_identifier:
     return parseIdentifierExpression(getchar);
   case Token::tok_number:
-    return parseNumberExpression();
+    return parseNumberExpression(getchar);
   case '(':
     return parseParenExpression(getchar);
   default:
@@ -83,7 +90,7 @@ parseParenExpression(std::function<char()> getchar) {
   if (!v) {
     return nullptr;
   } else {
-    if (static_cast<char>(getToken(getchar)) != ')') {
+    if (currentToken != ')') {
       throw std::runtime_error("incorrect () expression");
     }
   }
@@ -142,6 +149,30 @@ int parseRealScript() {
 static std::unique_ptr<ExpressAST>
 parseBinaryRHS(int expressionPrecedence, std::unique_ptr<ExpressAST> LHS,
                std::function<char()> getchar) {
+  while (true) {
+    int currentOperatorPrecedence = getTokenPrecedence();
+    if (currentOperatorPrecedence < expressionPrecedence) {
+      // 唯一出口，当当前处理的token不是二元操作符的时候    
+      return LHS;
+    }
+
+    int ope = currentToken;
+    getNextToken(getchar);
+    auto RHS = parsePrimary(getchar);
+    if (!RHS) {
+      return nullptr;
+    }
+    int nextOperatorPrecedence = getTokenPrecedence();
+    if (currentOperatorPrecedence < nextOperatorPrecedence) {
+      // a+b*c
+      // 如果当前是+下一个是*,
+      // 则将当前的RHS当作下一个操作的LHS进行处理，得到新的RHS
+      // 为了让1+2+3中，1+2成为一个LHS，需要将Current operator precedence调高1
+      RHS = parseBinaryRHS(currentOperatorPrecedence + 1, std::move(RHS),
+                           getchar);
+    }
+    LHS = std::make_unique<BinaryExprAST>(static_cast<char>(ope), std::move(LHS), std::move(RHS));
+  }
   return nullptr;
 }
 
@@ -151,17 +182,17 @@ parseExpression(std::function<char()> getchar) {
   if (!LHS) {
     return nullptr;
   }
-  return parseBinaryRHS(0, std::move(LHS), getchar); // TODO fix it
+  return parseBinaryRHS(0, std::move(LHS), getchar);
 }
 
 int precedenceParse() {
 
   std::stringstream contentStream;
-  contentStream << "(3+5*7);\n";
+  contentStream << "a/b-c*d;\n";
   contentStream << EOF;
   std::string str = contentStream.str();
   int pos = 0;
-  int size = 12;
+  int size = str.size();
 
   auto getchar = [&pos, &str, &size]() {
     if (pos < size) {
@@ -173,7 +204,8 @@ int precedenceParse() {
     }
   };
   getNextToken(getchar);
-  parseExpression(getchar);
+  auto parsedExpression = parseExpression(getchar);
+  std::cout << parsedExpression->getText() << std::endl;
   return 0;
 }
 

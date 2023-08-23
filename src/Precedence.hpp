@@ -13,6 +13,7 @@ public:
     binOpPrecedence['+'] = 20;
     binOpPrecedence['-'] = 20;
     binOpPrecedence['*'] = 40;
+    binOpPrecedence['/'] = 40;
   }
 
   int getOpPrecedence(char c) {
