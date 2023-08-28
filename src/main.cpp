@@ -9,13 +9,15 @@
 #include <iterator>
 #include <memory>
 #include <stdexcept>
+#include <string>
 #include <vector>
 
 extern double numbValue;
 
 static int currentToken;
 static int getNextToken(std::function<char()> getchar) {
-  return currentToken = getToken(getchar);
+  currentToken = getToken(getchar);
+  return currentToken;
 }
 
 static PrecedenceParser precedenceParser;
@@ -24,14 +26,99 @@ static int getTokenPrecedence() {
   return precedenceParser.getOpPrecedence(static_cast<char>(currentToken));
 }
 
-static std::unique_ptr<ExpressAST> parseNumberExpression(std::function<char()> getchar) {
+static std::unique_ptr<ExpressAST>
+parseNumberExpression(std::function<char()> getchar) {
   auto result = std::make_unique<NumberExpressionAST>(numbValue);
   getNextToken(getchar); // consumed this number token
   return std::move(result);
 }
 
+static std::unique_ptr<PrototypeAST>
+parsePrototype(std::function<char()> getchar) {
+  if (currentToken != Token::tok_identifier) {
+    throw new std::runtime_error("function define must have identifier");
+  }
+  std::string functionName = identifier;
+  getNextToken(getchar);
+
+  if (currentToken != '(') {
+    throw new std::runtime_error("Expected '(' in prototype");
+  }
+
+  std::vector<std::string> argNames;
+  while (getNextToken(getchar) == Token::tok_identifier) {
+    argNames.push_back(identifier);
+  }
+
+  if (currentToken != ')') {
+    throw new std::runtime_error("Expected ')' in prototype");
+  }
+  getNextToken(getchar);
+  return std::make_unique<PrototypeAST>(std::move(functionName), std::move(argNames));
+}
+
 static std::unique_ptr<ExpressAST>
 parseExpression(std::function<char()> getchar);
+
+static std::unique_ptr<FunctionAST>
+parseFunction(std::function<char()> getchar) {
+  getNextToken(getchar);
+  auto prototype = parsePrototype(getchar);
+  if (auto expression = parseExpression(getchar)) {
+    return std::make_unique<FunctionAST>(std::move(prototype),
+                                         std::move(expression));
+  }
+  return nullptr;
+}
+
+static std::unique_ptr<PrototypeAST>
+parseExtern(std::function<char()> getchar) {
+  getNextToken(getchar); // eat extern
+  return parsePrototype(getchar);
+}
+
+static std::unique_ptr<FunctionAST>
+parseToplevelAST(std::function<char()> getchar) {
+
+  if (auto expression = parseExpression(getchar)) {
+    auto Proto = std::make_unique<PrototypeAST>("", std::vector<std::string>());
+    return std::make_unique<FunctionAST>(std::move(Proto),
+                                         std::move(expression));
+  }
+  return nullptr;
+}
+
+// top ::= function define | external function | expression | ; | EOF
+static void driver(std::function<char()> getchar) {
+  while (true) {
+    switch (currentToken) {
+    case Token::tok_eof:
+      return;
+    case ';': {
+      getNextToken(getchar);
+      break;
+    }
+    case Token::tok_def: {
+      auto function = parseFunction(getchar);
+      if (function) {
+        std::cout << function->getText() << std::endl;
+      }
+      break;
+    }
+    case Token::tok_extern: {
+      auto ext = parseExtern(getchar);
+      ext->getText();
+      break;
+    }
+    default: {
+      auto function = parseToplevelAST(getchar);
+      function->getText();
+      break;
+    }
+    }
+  }
+}
+
 static std::unique_ptr<ExpressAST>
 parseIdentifierExpression(std::function<char()> getchar);
 static std::unique_ptr<ExpressAST>
@@ -152,7 +239,7 @@ parseBinaryRHS(int expressionPrecedence, std::unique_ptr<ExpressAST> LHS,
   while (true) {
     int currentOperatorPrecedence = getTokenPrecedence();
     if (currentOperatorPrecedence < expressionPrecedence) {
-      // 唯一出口，当当前处理的token不是二元操作符的时候    
+      // 唯一出口，当当前处理的token不是二元操作符的时候
       return LHS;
     }
 
@@ -171,7 +258,8 @@ parseBinaryRHS(int expressionPrecedence, std::unique_ptr<ExpressAST> LHS,
       RHS = parseBinaryRHS(currentOperatorPrecedence + 1, std::move(RHS),
                            getchar);
     }
-    LHS = std::make_unique<BinaryExprAST>(static_cast<char>(ope), std::move(LHS), std::move(RHS));
+    LHS = std::make_unique<BinaryExprAST>(static_cast<char>(ope),
+                                          std::move(LHS), std::move(RHS));
   }
   return nullptr;
 }
@@ -209,4 +297,26 @@ int precedenceParse() {
   return 0;
 }
 
-int main(int, char **) { return precedenceParse(); }
+int driverParse() {
+  std::stringstream contentStream;
+  contentStream << "def fib(x) x + 10 ;\n";
+  contentStream << static_cast<char>(EOF);
+  std::string str = contentStream.str();
+  int pos = 0;
+  int size = str.size();
+
+  auto getchar = [&pos, &str, &size]() {
+    if (pos < size) {
+      char chr = str.at(pos);
+      pos++;
+      return chr;
+    } else {
+      return static_cast<char>(EOF);
+    }
+  };
+  getNextToken(getchar);
+  driver(getchar);
+  return 0;
+}
+
+int main(int, char **) { return driverParse(); }

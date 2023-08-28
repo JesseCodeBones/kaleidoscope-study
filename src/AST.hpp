@@ -68,6 +68,10 @@ class PrototypeAST {
 public:
   PrototypeAST(const std::string &name, std::vector<std::string> Args)
       : Name(name), Args(std::move(Args)) {}
+  std::string getText() {
+    return "{\"type\":\"Prototype\", \"Name\": \"" + Name +
+           "\", \"argsSize\":" + std::to_string(Args.size()) + "}";
+  }
 };
 
 /// FunctionAST - This class represents a function definition itself.
@@ -79,6 +83,10 @@ public:
   FunctionAST(std::unique_ptr<PrototypeAST> Proto,
               std::unique_ptr<ExpressAST> Body)
       : Proto(std::move(Proto)), Body(std::move(Body)) {}
+  std::string getText() {
+    return "{\"type\":\"Function\", \"proto\": " + Proto->getText() +
+           ", \"body\":" + Body->getText() + "}";
+  }
 };
 
 #endif
