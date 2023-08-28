@@ -1,0 +1,2544 @@
+jesse@Dev:~/workspace/llvm-project/llvm/build$ sudo make install -j2
+[sudo] password for jesse: 
+[  0%] Built target LLVMSupportBlake3
+[  0%] Built target LLVMDemangle
+[  0%] Built target llvm_vcsrevision_h
+[  0%] Built target LLVMHello_exports
+[  1%] Built target obj.llvm-tblgen
+[  1%] Built target llvm-PerfectShuffle
+[  1%] Built target count
+[  1%] Built target LTO_exports
+[  1%] Built target BugpointPasses_exports
+[  1%] Built target Remarks_exports
+[  1%] Built target DynamicLibraryLib
+[  1%] Built target PipSqueak
+[  1%] Built target SecondLib
+[  1%] Built target benchmark
+[  1%] Built target benchmark_main
+[  6%] Built target LLVMSupport
+[  6%] Built target LLVMBitstreamReader
+[  6%] Built target LLVMTableGen
+[  6%] Built target LLVMFuzzerCLI
+[  6%] Built target LLVMBinaryFormat
+[  6%] Built target LLVMDebugInfoMSF
+[  7%] Built target LLVMDebugInfoCodeView
+[  7%] Built target LLVMFileCheck
+[  7%] Built target LLVMExtensions
+[  7%] Built target LLVMOption
+[  7%] Built target LLVMLineEditor
+[  7%] Built target llvm_gtest
+[  7%] Built target LLVMWindowsDriver
+[  9%] Built target LLVMWindowsManifest
+[  9%] Built target FileCheck
+[  9%] Built target not
+[  9%] Built target UnicodeNameMappingGenerator
+[  9%] Built target yaml-bench
+[  9%] Built target llvm-config
+[  9%] Built target llvm-dlang-demangle-fuzzer
+[ 10%] Built target llvm-itanium-demangle-fuzzer
+[ 10%] Built target llvm-microsoft-demangle-fuzzer
+[ 10%] Built target llvm-rust-demangle-fuzzer
+[ 10%] Built target llvm-special-case-list-fuzzer
+[ 10%] Built target llvm-undname
+[ 12%] Built target llvm-yaml-parser-fuzzer
+[ 12%] Built target llvm-yaml-numeric-parser-fuzzer
+[ 12%] Built target llvm_gtest_main
+[ 12%] Built target split-file
+[ 12%] Built target LLVMTextAPI
+[ 12%] Built target LLVMTableGenGlobalISel
+[ 13%] Built target LLVMTestingSupport
+[ 13%] Built target llvm-tblgen
+[ 15%] Built target LLVMMC
+[ 15%] Built target acc_gen
+[ 16%] Built target intrinsics_gen
+[ 16%] Built target omp_gen
+[ 16%] Built target LLVMMCDisassembler
+[ 16%] Built target LLVMOrcShared
+[ 18%] Built target LLVMMCA
+[ 18%] Built target AArch64CommonTableGen
+[ 18%] Built target AMDGPUCommonTableGen
+[ 18%] Built target ARMCommonTableGen
+[ 20%] Built target AVRCommonTableGen
+[ 20%] Built target BPFCommonTableGen
+[ 20%] Built target HexagonCommonTableGen
+[ 20%] Built target LanaiCommonTableGen
+[ 20%] Built target MipsCommonTableGen
+[ 20%] Built target MSP430CommonTableGen
+[ 20%] Built target NVPTXCommonTableGen
+[ 20%] Built target PowerPCCommonTableGen
+[ 21%] Built target RISCVCommonTableGen
+[ 21%] Built target SparcCommonTableGen
+[ 23%] Built target SystemZCommonTableGen
+[ 24%] Built target VECommonTableGen
+[ 24%] Built target WebAssemblyCommonTableGen
+[ 24%] Built target X86CommonTableGen
+[ 24%] Built target XCoreCommonTableGen
+[ 24%] Built target DllOptionsTableGen
+[ 24%] Built target LibOptionsTableGen
+[ 24%] Built target DsymutilTableGen
+[ 24%] Built target CxxfiltOptsTableGen
+[ 24%] Built target CvtResTableGen
+[ 24%] Built target IFSOptsTableGen
+[ 24%] Built target DwarfutilTableGen
+[ 24%] Built target LipoOptsTableGen
+[ 24%] Built target MLTableGen
+[ 24%] Built target MtTableGen
+[ 24%] Built target NmOptsTableGen
+[ 24%] Built target ObjcopyOptsTableGen
+[ 24%] Built target ObjdumpOptsTableGen
+[ 24%] Built target RcOptsTableGen
+[ 24%] Built target ReadobjOptsTableGen
+[ 24%] Built target StringsOptsTableGen
+[ 24%] Built target SizeOptsTableGen
+[ 24%] Built target TLICheckerOptsTableGen
+[ 24%] Built target SymbolizerOptsTableGen
+[ 24%] Built target TestPlugin
+[ 24%] Built target Bye
+[ 24%] Built target DoublerPlugin
+[ 24%] Built target LLVMRemarks
+[ 26%] Built target LLVMMCParser
+[ 26%] Built target LLVMFrontendOpenACC
+[ 26%] Built target LLVMHello
+[ 26%] Built target LLVMAArch64Utils
+[ 26%] Built target LLVMOrcTargetProcess
+[ 26%] Built target LLVMAArch64Info
+[ 26%] Built target InstCombineTableGen
+[ 26%] Built target LLVMARMUtils
+[ 26%] Built target LLVMARMInfo
+[ 26%] Built target LLVMAVRInfo
+[ 27%] Built target LLVMBPFInfo
+[ 27%] Built target LLVMHexagonInfo
+[ 27%] Built target LLVMLanaiInfo
+[ 27%] Built target LLVMMipsInfo
+[ 27%] Built target LLVMMSP430Info
+[ 27%] Built target LLVMNVPTXInfo
+[ 27%] Built target LLVMPowerPCInfo
+[ 27%] Built target LLVMRISCVInfo
+[ 27%] Built target LLVMSparcInfo
+[ 27%] Built target LLVMSystemZInfo
+[ 27%] Built target LLVMVEInfo
+[ 27%] Built target LLVMWebAssemblyInfo
+[ 27%] Built target LLVMX86Info
+[ 27%] Built target LLVMXCoreInfo
+[ 27%] Built target llvm-cxxfilt
+[ 27%] Built target llvm-jitlink-executor
+[ 27%] Built target llvm-mt
+[ 27%] Built target InstallNameToolOptsTableGen
+[ 27%] Built target OtoolOptsTableGen
+[ 27%] Built target WindresOptsTableGen
+[ 27%] Built target Remarks
+[ 29%] Built target LLVMAArch64Desc
+[ 32%] Built target LLVMCore
+[ 32%] Built target LLVMAMDGPUInfo
+[ 32%] Built target LLVMARMDesc
+[ 33%] Built target LLVMAVRDesc
+[ 33%] Built target LLVMAVRDisassembler
+[ 33%] Built target LLVMBPFDesc
+[ 33%] Built target LLVMBPFDisassembler
+[ 35%] Built target LLVMHexagonDesc
+[ 35%] Built target LLVMLanaiDesc
+[ 35%] Built target LLVMMipsDesc
+[ 35%] Built target LLVMMipsDisassembler
+[ 35%] Built target LLVMMSP430Disassembler
+[ 35%] Built target LLVMMSP430Desc
+[ 35%] Built target LLVMNVPTXDesc
+[ 35%] Built target LLVMPowerPCDesc
+[ 35%] Built target LLVMPowerPCDisassembler
+[ 36%] Built target LLVMRISCVDesc
+[ 36%] Built target LLVMSparcDesc
+[ 36%] Built target LLVMSparcDisassembler
+[ 36%] Built target LLVMSystemZDesc
+[ 36%] Built target LLVMVEDesc
+[ 36%] Built target LLVMVEDisassembler
+[ 36%] Built target LLVMX86Desc
+[ 36%] Built target LLVMX86Disassembler
+[ 36%] Built target LLVMXCoreDesc
+[ 36%] Built target LLVMXCoreDisassembler
+[ 36%] Built target llvm-cxxmap
+[ 36%] Built target LLVMDiff
+[ 36%] Built target BitcodeStripOptsTableGen
+[ 36%] Built target LLVMBitReader
+[ 36%] Built target LLVMAsmParser
+[ 36%] Built target LLVMCFGuard
+[ 36%] Built target LLVMAArch64AsmParser
+[ 36%] Built target LLVMAArch64Disassembler
+[ 36%] Built target LLVMARMAsmParser
+[ 36%] Built target LLVMARMDisassembler
+[ 36%] Built target LLVMAVRAsmParser
+[ 36%] Built target LLVMHexagonAsmParser
+[ 36%] Built target LLVMBPFAsmParser
+[ 36%] Built target LLVMHexagonDisassembler
+[ 36%] Built target LLVMLanaiAsmParser
+[ 36%] Built target LLVMMipsAsmParser
+[ 36%] Built target LLVMLanaiDisassembler
+[ 36%] Built target LLVMMSP430AsmParser
+[ 36%] Built target LLVMPowerPCAsmParser
+[ 36%] Built target LLVMRISCVDisassembler
+[ 36%] Built target LLVMRISCVAsmParser
+[ 36%] Built target LLVMSystemZAsmParser
+[ 36%] Built target LLVMSparcAsmParser
+[ 36%] Built target LLVMSystemZDisassembler
+[ 36%] Built target LLVMVEAsmParser
+[ 36%] Built target LLVMX86TargetMCA
+[ 36%] Built target LLVMX86AsmParser
+[ 36%] Built target llvm-bcanalyzer
+[ 36%] Built target llvm-dis
+[ 36%] Built target StripOptsTableGen
+[ 36%] Built target LLVMObject
+[ 36%] Built target LLVMIRReader
+[ 38%] Built target LLVMDebugInfoDWARF
+[ 38%] Built target LLVMInterfaceStub
+[ 41%] Built target LLVMDebugInfoPDB
+[ 43%] Built target LLVMObjCopy
+[ 44%] Built target LLVMObjectYAML
+[ 44%] Built target LLVMDebugInfoGSYM
+[ 44%] Built target LLVMRuntimeDyld
+[ 44%] Built target LLVMJITLink
+[ 44%] Built target LLVMDlltoolDriver
+[ 44%] Built target LLVMLibDriver
+[ 44%] Built target LLVMXRay
+[ 44%] Built target llvm-cvtres
+[ 44%] Built target llvm-cxxdump
+[ 44%] Built target llvm-diff
+[ 44%] Built target llvm-ifs
+[ 46%] Built target llvm-objcopy
+[ 46%] Built target llvm-opt-report
+[ 47%] Built target llvm-rc
+[ 47%] Built target llvm-pdbutil
+[ 47%] Built target llvm-remark-size-diff
+[ 47%] Built target llvm-readobj
+[ 47%] Built target llvm-size
+[ 47%] Built target llvm-strings
+[ 47%] Built target llvm-tapi-diff
+[ 47%] Built target obj2yaml
+[ 49%] Built target yaml2obj
+[ 49%] Built target LLVMSymbolize
+[ 49%] Built target llvm-install-name-tool
+[ 49%] Built target llvm-bitcode-strip
+[ 49%] Built target llvm-strip
+[ 49%] Built target llvm-windres
+[ 49%] Built target llvm-readelf
+[ 49%] Built target llvm-xray
+[ 49%] Built target sanstats
+[ 49%] Built target LLVMProfileData
+[ 49%] Built target LLVMDebuginfod
+[ 49%] Built target LLVMCFIVerify
+[ 49%] Built target LLVMCoverage
+[ 49%] Built target llvm-profdata
+[ 52%] Built target LLVMAnalysis
+[ 53%] Built target llvm-cov
+[ 53%] Built target llvm-debuginfod
+[ 53%] Built target llvm-debuginfod-find
+[ 53%] Built target llvm-sim
+[ 53%] Built target llvm-stress
+[ 53%] Built target llvm-symbolizer
+[ 53%] Built target llvm-tli-checker
+[ 53%] Built target LLVMBitWriter
+[ 53%] Built target LLVMTarget
+[ 55%] Built target LLVMAMDGPUUtils
+[ 55%] Built target LLVMTransformUtils
+[ 55%] Built target llvm-cat
+[ 55%] Built target llvm-as
+[ 55%] Built target llvm-split
+[ 55%] Built target llvm-modextract
+[ 55%] Built target llvm-addr2line
+[ 55%] Built target verify-uselistorder
+[ 55%] Built target LLVMAggressiveInstCombine
+[ 55%] Built target LLVMInstCombine
+[ 56%] Built target LLVMInstrumentation
+[ 56%] Built target LLVMVectorize
+[ 56%] Built target LLVMLinker
+[ 56%] Built target LLVMObjCARCOpts
+[ 56%] Built target LLVMDWP
+[ 56%] Built target LLVMExecutionEngine
+[ 56%] Built target LLVMAMDGPUDesc
+[ 56%] Built target LLVMMCJIT
+[ 60%] Built target LLVMScalarOpts
+[ 60%] Built target LLVMAMDGPUAsmParser
+[ 61%] Built target LLVMAMDGPUDisassembler
+[ 61%] Built target LLVMAMDGPUTargetMCA
+[ 61%] Built target LLVMFuzzMutate
+[ 63%] Built target LLVMFrontendOpenMP
+[ 64%] Built target LLVMipo
+[ 64%] Built target LLVMCoroutines
+[ 64%] Built target llvm-extract
+[ 70%] Built target LLVMCodeGen
+[ 70%] Built target llvm-link
+[ 70%] Built target LLVMSelectionDAG
+[ 72%] Built target LLVMAsmPrinter
+[ 72%] Built target LLVMMIRParser
+[ 72%] Built target LLVMDWARFLinker
+[ 72%] Built target LLVMGlobalISel
+[ 72%] Built target LLVMPasses
+[ 72%] Built target LLVMInterpreter
+[ 73%] Built target LLVMAArch64CodeGen
+[ 76%] Built target LLVMAMDGPUCodeGen
+[ 78%] Built target LLVMARMCodeGen
+[ 78%] Built target LLVMAVRCodeGen
+[ 78%] Built target LLVMBPFCodeGen
+[ 80%] Built target LLVMLanaiCodeGen
+[ 81%] Built target LLVMHexagonCodeGen
+[ 81%] Built target LLVMMSP430CodeGen
+[ 83%] Built target LLVMMipsCodeGen
+[ 84%] Built target LLVMNVPTXCodeGen
+[ 86%] Built target LLVMPowerPCCodeGen
+[ 86%] Built target LLVMRISCVCodeGen
+[ 87%] Built target LLVMSparcCodeGen
+[ 89%] Built target LLVMSystemZCodeGen
+[ 90%] Built target LLVMVECodeGen
+[ 90%] Built target LLVMWebAssemblyUtils
+[ 92%] Built target LLVMXCoreCodeGen
+[ 93%] Built target LLVMX86CodeGen
+[ 95%] Built target LLVMExegesis
+[ 95%] Built target LLVMLTO
+[ 95%] Built target LLVMWebAssemblyDesc
+[ 96%] Built target LLVMOrcJIT
+[ 96%] Built target LLVMWebAssemblyAsmParser
+[ 96%] Built target LLVMWebAssemblyDisassembler
+[ 96%] Built target lli
+[ 96%] Built target lli-child-target
+[ 96%] Built target llvm-cfi-verify
+[ 96%] Built target llvm-dwarfdump
+[ 96%] Built target LLVMExegesisX86
+[ 96%] Built target LLVMExegesisAArch64
+[ 96%] Built target LLVMExegesisPowerPC
+[ 96%] Built target LLVMExegesisMips
+[ 96%] Built target llvm-jitlink
+[ 96%] Built target llvm-mc
+[ 96%] Built target llvm-ml
+[ 96%] Built target llvm-mca
+[ 96%] Built target llvm-nm
+[ 96%] Built target llvm-objdump
+[ 96%] Built target llvm-rtdyld
+[ 96%] Built target llvm-profgen
+[ 96%] Built target llvm-locstats
+[ 96%] Built target sancov
+[ 96%] Built target llvm-ar
+[ 96%] Built target llvm-exegesis
+[ 98%] Built target LLVMWebAssemblyCodeGen
+[ 98%] Built target llvm-otool
+[ 98%] Built target LTO
+[ 98%] Built target llvm-ranlib
+[ 98%] Built target llvm-lib
+[ 98%] Built target llvm-dlltool
+[ 98%] Built target llvm-lto
+[ 98%] Built target bugpoint
+[ 98%] Built target dsymutil
+[ 98%] Built target llc
+[ 98%] Built target llvm-c-test
+[ 98%] Built target llvm-dwarfutil
+[ 98%] Built target llvm-dwp
+[ 98%] Built target llvm-gsymutil
+[ 98%] Built target llvm-isel-fuzzer
+[ 98%] Built target llvm-libtool-darwin
+[ 98%] Built target llvm-lipo
+[ 98%] Built target llvm-lto2
+[ 98%] Built target llvm-opt-fuzzer
+[100%] Built target llvm-reduce
+[100%] Built target opt
+[100%] Built target BugpointPasses
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /usr/local/include/llvm
+-- Installing: /usr/local/include/llvm/AsmParser
+-- Installing: /usr/local/include/llvm/AsmParser/SlotMapping.h
+-- Installing: /usr/local/include/llvm/AsmParser/LLToken.h
+-- Installing: /usr/local/include/llvm/AsmParser/LLLexer.h
+-- Installing: /usr/local/include/llvm/AsmParser/Parser.h
+-- Installing: /usr/local/include/llvm/AsmParser/LLParser.h
+-- Installing: /usr/local/include/llvm/ObjectYAML
+-- Installing: /usr/local/include/llvm/ObjectYAML/DWARFEmitter.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/COFFYAML.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/ELFYAML.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/ObjectYAML.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/CodeViewYAMLTypeHashing.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/CodeViewYAMLTypes.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/DWARFYAML.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/yaml2obj.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/XCOFFYAML.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/YAML.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/ArchiveYAML.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/MachOYAML.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/CodeViewYAMLSymbols.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/WasmYAML.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/CodeViewYAMLDebugSections.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/DXContainerYAML.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/OffloadYAML.h
+-- Installing: /usr/local/include/llvm/ObjectYAML/MinidumpYAML.h
+-- Installing: /usr/local/include/llvm/BinaryFormat
+-- Installing: /usr/local/include/llvm/BinaryFormat/MachO.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/Wasm.h
+-- Installing: /usr/local/include/llvm/BinaryFormat/Dwarf.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/XCOFF.h
+-- Installing: /usr/local/include/llvm/BinaryFormat/Swift.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELF.h
+-- Installing: /usr/local/include/llvm/BinaryFormat/MsgPack.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/DXContainer.h
+-- Installing: /usr/local/include/llvm/BinaryFormat/Minidump.h
+-- Installing: /usr/local/include/llvm/BinaryFormat/MsgPackDocument.h
+-- Installing: /usr/local/include/llvm/BinaryFormat/Swift.h
+-- Installing: /usr/local/include/llvm/BinaryFormat/Magic.h
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/SystemZ.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/AVR.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/CSKY.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/AArch64.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/ARM.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/VE.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/BPF.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/i386.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/Hexagon.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/LoongArch.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/M68k.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/AMDGPU.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/ARC.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/Mips.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/Lanai.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/PowerPC.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/PowerPC64.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/MSP430.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/x86_64.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/RISCV.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/ELFRelocs/Sparc.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/MsgPack.h
+-- Installing: /usr/local/include/llvm/BinaryFormat/MsgPackReader.h
+-- Installing: /usr/local/include/llvm/BinaryFormat/AMDGPUMetadataVerifier.h
+-- Installing: /usr/local/include/llvm/BinaryFormat/MinidumpConstants.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/Dwarf.h
+-- Installing: /usr/local/include/llvm/BinaryFormat/WasmTraits.h
+-- Installing: /usr/local/include/llvm/BinaryFormat/GOFF.h
+-- Installing: /usr/local/include/llvm/BinaryFormat/COFF.h
+-- Installing: /usr/local/include/llvm/BinaryFormat/MsgPackWriter.h
+-- Installing: /usr/local/include/llvm/BinaryFormat/WasmRelocs.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/DynamicTags.def
+-- Installing: /usr/local/include/llvm/BinaryFormat/MachO.h
+-- Installing: /usr/local/include/llvm/WindowsDriver
+-- Installing: /usr/local/include/llvm/WindowsDriver/MSVCPaths.h
+-- Installing: /usr/local/include/llvm/WindowsDriver/MSVCSetupApi.h
+-- Installing: /usr/local/include/llvm/Transforms
+-- Installing: /usr/local/include/llvm/Transforms/IPO.h
+-- Installing: /usr/local/include/llvm/Transforms/Vectorize
+-- Installing: /usr/local/include/llvm/Transforms/Vectorize/SLPVectorizer.h
+-- Installing: /usr/local/include/llvm/Transforms/Vectorize/LoopVectorizationLegality.h
+-- Installing: /usr/local/include/llvm/Transforms/Vectorize/LoadStoreVectorizer.h
+-- Installing: /usr/local/include/llvm/Transforms/Vectorize/LoopVectorize.h
+-- Installing: /usr/local/include/llvm/Transforms/Vectorize/VectorCombine.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/BoundsChecking.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/AddressSanitizer.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/GCOVProfiler.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/ControlHeightReduction.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/InstrProfiling.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/AddressSanitizerOptions.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/CGProfile.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/SanitizerCoverage.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/PoisonChecking.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/DataFlowSanitizer.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/PGOInstrumentation.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/MemProfiler.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/HWAddressSanitizer.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/ThreadSanitizer.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/AddressSanitizerCommon.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/MemorySanitizer.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation/InstrOrderFile.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils
+-- Installing: /usr/local/include/llvm/Transforms/Utils/SymbolRewriter.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/SampleProfileInference.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/FunctionComparator.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/EntryExitInstrumenter.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/InstructionNamer.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/GuardUtils.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/UnrollLoop.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/SanitizerStats.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/LowerAtomic.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/BuildLibCalls.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/CodeLayout.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/UnifyFunctionExitNodes.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/VNCoercion.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/CodeExtractor.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/CodeMoverUtils.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/AddDiscriminators.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/LoopSimplify.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/SimplifyIndVar.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/IntegerDivision.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/NameAnonGlobals.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/BreakCriticalEdges.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/LoopPeel.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/LibCallsShrinkWrap.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/ScalarEvolutionExpander.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/Evaluator.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/AMDGPUEmitPrintf.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/Debugify.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/FixIrreducible.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/MatrixUtils.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/CallPromotionUtils.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/LoopVersioning.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/SampleProfileLoaderBaseUtil.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/CallGraphUpdater.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/LoopRotationUtils.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/ASanStackFrameLayout.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/StripGCRelocates.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/CanonicalizeFreezeInLoops.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/FunctionImportUtils.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/HelloWorld.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/SSAUpdaterBulk.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/SimplifyCFGOptions.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/InjectTLIMappings.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/GlobalStatus.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/LowerSwitch.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/SplitModule.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/StripNonLineTableDebugInfo.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/SCCPSolver.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/SSAUpdaterImpl.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/LCSSA.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/LowerMemIntrinsics.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/PredicateInfo.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/Cloning.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/CanonicalizeAliases.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/BasicBlockUtils.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/RelLookupTableConverter.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/MisExpect.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/AssumeBundleBuilder.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/SSAUpdater.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/UnifyLoopExits.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/LoopUtils.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/PromoteMemToReg.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/MemoryOpRemark.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/ValueMapper.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/Mem2Reg.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/MetaRenamer.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/BypassSlowDivision.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/EscapeEnumerator.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/MemoryTaggingSupport.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/ModuleUtils.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/LowerGlobalDtors.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/InstructionWorklist.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/CtorUtils.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/Local.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/SizeOpts.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/SimplifyLibCalls.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/SampleProfileLoaderBaseImpl.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils/LowerInvoke.h
+-- Installing: /usr/local/include/llvm/Transforms/Coroutines
+-- Installing: /usr/local/include/llvm/Transforms/Coroutines/CoroSplit.h
+-- Installing: /usr/local/include/llvm/Transforms/Coroutines/CoroCleanup.h
+-- Installing: /usr/local/include/llvm/Transforms/Coroutines/CoroElide.h
+-- Installing: /usr/local/include/llvm/Transforms/Coroutines/CoroConditionalWrapper.h
+-- Installing: /usr/local/include/llvm/Transforms/Coroutines/CoroEarly.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO
+-- Installing: /usr/local/include/llvm/Transforms/IPO/CrossDSOCFI.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/OpenMPOpt.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/MergeFunctions.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/BlockExtractor.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/ModuleInliner.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/AlwaysInliner.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/LoopExtractor.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/ElimAvailExtern.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/SampleProfile.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/SCCP.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/PartialInlining.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/InferFunctionAttrs.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/ArgumentPromotion.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/DeadArgumentElimination.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/Attributor.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/ThinLTOBitcodeWriter.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/GlobalOpt.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/FunctionImport.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/ProfiledCallGraph.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/ConstantMerge.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/SampleContextTracker.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/Inliner.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/PassManagerBuilder.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/SampleProfileProbe.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/LowerTypeTests.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/CalledValuePropagation.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/HotColdSplitting.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/IROutliner.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/StripDeadPrototypes.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/Internalize.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/StripSymbols.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/Annotation2Metadata.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/GlobalDCE.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/GlobalSplit.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/ForceFunctionAttrs.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/FunctionAttrs.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/SyntheticCountsPropagation.h
+-- Installing: /usr/local/include/llvm/Transforms/IPO/WholeProgramDevirt.h
+-- Installing: /usr/local/include/llvm/Transforms/ObjCARC.h
+-- Installing: /usr/local/include/llvm/Transforms/Instrumentation.h
+-- Installing: /usr/local/include/llvm/Transforms/InstCombine
+-- Installing: /usr/local/include/llvm/Transforms/InstCombine/InstCombine.h
+-- Installing: /usr/local/include/llvm/Transforms/InstCombine/InstCombiner.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/SimplifyCFG.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/CallSiteSplitting.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopFuse.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/GVN.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/StraightLineStrengthReduce.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/SimpleLoopUnswitch.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LICM.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/TLSVariableHoist.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopReroll.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/GVNExpression.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LowerAtomicPass.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/IndVarSimplify.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/BDCE.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/FlattenCFG.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/DeadStoreElimination.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/SCCP.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/InferAddressSpaces.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopSink.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/InstSimplifyPass.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/ScalarizeMaskedMemIntrin.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/MemCpyOptimizer.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopInstSimplify.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopRotation.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopDistribute.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/ConstraintElimination.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/NewGVN.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/MakeGuardsExplicit.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/SeparateConstOffsetFromGEP.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/SpeculativeExecution.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/GuardWidening.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/WarnMissedTransforms.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/RewriteStatepointsForGC.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/Scalarizer.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopDataPrefetch.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/Reassociate.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/TailRecursionElimination.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopVersioningLICM.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopLoadElimination.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LowerGuardIntrinsic.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/AnnotationRemarks.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/DFAJumpThreading.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/MergeICmps.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LowerMatrixIntrinsics.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/SROA.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopDeletion.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopAccessAnalysisPrinter.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/InductiveRangeCheckElimination.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/JumpThreading.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LowerConstantIntrinsics.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/DivRemPairs.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopPassManager.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/NaryReassociate.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/AlignmentFromAssumptions.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/StructurizeCFG.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/EarlyCSE.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopUnrollPass.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopInterchange.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopIdiomRecognize.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/ConstantHoisting.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/Float2Int.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopUnrollAndJamPass.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopPredication.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/Reg2Mem.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopStrengthReduce.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopBoundSplit.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/PartiallyInlineLibCalls.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/IVUsersPrinter.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopSimplifyCFG.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LoopFlatten.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/Sink.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/ADCE.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/MergedLoadStoreMotion.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/CorrelatedValuePropagation.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LowerExpectIntrinsic.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/DCE.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar/LowerWidenableCondition.h
+-- Installing: /usr/local/include/llvm/Transforms/CFGuard.h
+-- Installing: /usr/local/include/llvm/Transforms/Vectorize.h
+-- Installing: /usr/local/include/llvm/Transforms/Utils.h
+-- Installing: /usr/local/include/llvm/Transforms/Scalar.h
+-- Installing: /usr/local/include/llvm/Transforms/AggressiveInstCombine
+-- Installing: /usr/local/include/llvm/Transforms/AggressiveInstCombine/AggressiveInstCombine.h
+-- Installing: /usr/local/include/llvm/DWP
+-- Installing: /usr/local/include/llvm/DWP/DWP.h
+-- Installing: /usr/local/include/llvm/DWP/DWPError.h
+-- Installing: /usr/local/include/llvm/DWP/DWPStringPool.h
+-- Installing: /usr/local/include/llvm/LinkAllPasses.h
+-- Installing: /usr/local/include/llvm/IR
+-- Installing: /usr/local/include/llvm/IR/DebugInfoMetadata.h
+-- Installing: /usr/local/include/llvm/IR/CFG.h
+-- Installing: /usr/local/include/llvm/IR/Metadata.h
+-- Installing: /usr/local/include/llvm/IR/InstIterator.h
+-- Installing: /usr/local/include/llvm/IR/Constant.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsX86.td
+-- Installing: /usr/local/include/llvm/IR/Instruction.def
+-- Installing: /usr/local/include/llvm/IR/RuntimeLibcalls.def
+-- Installing: /usr/local/include/llvm/IR/LegacyPassNameParser.h
+-- Installing: /usr/local/include/llvm/IR/PassManagerInternal.h
+-- Installing: /usr/local/include/llvm/IR/User.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsRISCV.td
+-- Installing: /usr/local/include/llvm/IR/PassInstrumentation.h
+-- Installing: /usr/local/include/llvm/IR/PredIteratorCache.h
+-- Installing: /usr/local/include/llvm/IR/Module.h
+-- Installing: /usr/local/include/llvm/IR/GlobalAlias.h
+-- Installing: /usr/local/include/llvm/IR/DiagnosticInfo.h
+-- Installing: /usr/local/include/llvm/IR/IRBuilder.h
+-- Installing: /usr/local/include/llvm/IR/UseListOrder.h
+-- Installing: /usr/local/include/llvm/IR/FixedMetadataKinds.def
+-- Installing: /usr/local/include/llvm/IR/LegacyPassManager.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsAArch64.td
+-- Installing: /usr/local/include/llvm/IR/InlineAsm.h
+-- Installing: /usr/local/include/llvm/IR/Intrinsics.h
+-- Installing: /usr/local/include/llvm/IR/DerivedUser.h
+-- Installing: /usr/local/include/llvm/IR/DIBuilder.h
+-- Installing: /usr/local/include/llvm/IR/Verifier.h
+-- Installing: /usr/local/include/llvm/IR/DebugInfoFlags.def
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsHexagonDep.td
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsPowerPC.td
+-- Installing: /usr/local/include/llvm/IR/OptBisect.h
+-- Installing: /usr/local/include/llvm/IR/LLVMContext.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsAMDGPU.td
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsHexagon.td
+-- Installing: /usr/local/include/llvm/IR/ConstantFolder.h
+-- Installing: /usr/local/include/llvm/IR/DataLayout.h
+-- Installing: /usr/local/include/llvm/IR/PassTimingInfo.h
+-- Installing: /usr/local/include/llvm/IR/Assumptions.h
+-- Installing: /usr/local/include/llvm/IR/Attributes.h
+-- Installing: /usr/local/include/llvm/IR/ValueSymbolTable.h
+-- Installing: /usr/local/include/llvm/IR/AbstractCallSite.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsDirectX.td
+-- Installing: /usr/local/include/llvm/IR/ModuleSummaryIndex.h
+-- Installing: /usr/local/include/llvm/IR/PrintPasses.h
+-- Installing: /usr/local/include/llvm/IR/GCStrategy.h
+-- Installing: /usr/local/include/llvm/IR/VectorBuilder.h
+-- Installing: /usr/local/include/llvm/IR/Instructions.h
+-- Installing: /usr/local/include/llvm/IR/Intrinsics.td
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsWebAssembly.td
+-- Installing: /usr/local/include/llvm/IR/DiagnosticHandler.h
+-- Installing: /usr/local/include/llvm/IR/Instruction.h
+-- Installing: /usr/local/include/llvm/IR/Constants.h
+-- Installing: /usr/local/include/llvm/IR/TrackingMDRef.h
+-- Installing: /usr/local/include/llvm/IR/Statepoint.h
+-- Installing: /usr/local/include/llvm/IR/ValueMap.h
+-- Installing: /usr/local/include/llvm/IR/PassManagerImpl.h
+-- Installing: /usr/local/include/llvm/IR/GVMaterializer.h
+-- Installing: /usr/local/include/llvm/IR/PassManager.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsARM.td
+-- Installing: /usr/local/include/llvm/IR/Use.h
+-- Installing: /usr/local/include/llvm/IR/StructuralHash.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsBPF.td
+-- Installing: /usr/local/include/llvm/IR/MDBuilder.h
+-- Installing: /usr/local/include/llvm/IR/Mangler.h
+-- Installing: /usr/local/include/llvm/IR/Metadata.def
+-- Installing: /usr/local/include/llvm/IR/CallingConv.h
+-- Installing: /usr/local/include/llvm/IR/ModuleSummaryIndexYAML.h
+-- Installing: /usr/local/include/llvm/IR/Dominators.h
+-- Installing: /usr/local/include/llvm/IR/NoFolder.h
+-- Installing: /usr/local/include/llvm/IR/ConstantRange.h
+-- Installing: /usr/local/include/llvm/IR/ConstantFold.h
+-- Installing: /usr/local/include/llvm/IR/FPEnv.h
+-- Installing: /usr/local/include/llvm/IR/FixedPointBuilder.h
+-- Installing: /usr/local/include/llvm/IR/PatternMatch.h
+-- Installing: /usr/local/include/llvm/IR/DebugInfo.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsSystemZ.td
+-- Installing: /usr/local/include/llvm/IR/IntrinsicInst.h
+-- Installing: /usr/local/include/llvm/IR/MatrixBuilder.h
+-- Installing: /usr/local/include/llvm/IR/GetElementPtrTypeIterator.h
+-- Installing: /usr/local/include/llvm/IR/InstrTypes.h
+-- Installing: /usr/local/include/llvm/IR/InstVisitor.h
+-- Installing: /usr/local/include/llvm/IR/Value.h
+-- Installing: /usr/local/include/llvm/IR/Value.def
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsVE.td
+-- Installing: /usr/local/include/llvm/IR/GlobalValue.h
+-- Installing: /usr/local/include/llvm/IR/IRBuilderFolder.h
+-- Installing: /usr/local/include/llvm/IR/VPIntrinsics.def
+-- Installing: /usr/local/include/llvm/IR/GlobalObject.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsSPIRV.td
+-- Installing: /usr/local/include/llvm/IR/SymbolTableListTraits.h
+-- Installing: /usr/local/include/llvm/IR/IRPrintingPasses.h
+-- Installing: /usr/local/include/llvm/IR/ProfileSummary.h
+-- Installing: /usr/local/include/llvm/IR/ReplaceConstant.h
+-- Installing: /usr/local/include/llvm/IR/LegacyPassManagers.h
+-- Installing: /usr/local/include/llvm/IR/ModuleSlotTracker.h
+-- Installing: /usr/local/include/llvm/IR/DebugLoc.h
+-- Installing: /usr/local/include/llvm/IR/AssemblyAnnotationWriter.h
+-- Installing: /usr/local/include/llvm/IR/Type.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsMips.td
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsXCore.td
+-- Installing: /usr/local/include/llvm/IR/Function.h
+-- Installing: /usr/local/include/llvm/IR/Attributes.td
+-- Installing: /usr/local/include/llvm/IR/SSAContext.h
+-- Installing: /usr/local/include/llvm/IR/LLVMRemarkStreamer.h
+-- Installing: /usr/local/include/llvm/IR/BasicBlock.h
+-- Installing: /usr/local/include/llvm/IR/ValueHandle.h
+-- Installing: /usr/local/include/llvm/IR/Comdat.h
+-- Installing: /usr/local/include/llvm/IR/OperandTraits.h
+-- Installing: /usr/local/include/llvm/IR/Argument.h
+-- Installing: /usr/local/include/llvm/IR/SafepointIRVerifier.h
+-- Installing: /usr/local/include/llvm/IR/GlobalIFunc.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsVEVL.gen.td
+-- Installing: /usr/local/include/llvm/IR/BuiltinGCs.h
+-- Installing: /usr/local/include/llvm/IR/Operator.h
+-- Installing: /usr/local/include/llvm/IR/TypeFinder.h
+-- Installing: /usr/local/include/llvm/IR/GlobalVariable.h
+-- Installing: /usr/local/include/llvm/IR/DerivedTypes.h
+-- Installing: /usr/local/include/llvm/IR/AutoUpgrade.h
+-- Installing: /usr/local/include/llvm/IR/FMF.h
+-- Installing: /usr/local/include/llvm/IR/DiagnosticPrinter.h
+-- Installing: /usr/local/include/llvm/IR/ConstrainedOps.def
+-- Installing: /usr/local/include/llvm/IR/PseudoProbe.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsNVVM.td
+-- Installing: /usr/local/include/llvm/CodeGen
+-- Installing: /usr/local/include/llvm/CodeGen/ExpandReductions.h
+-- Installing: /usr/local/include/llvm/CodeGen/ScheduleHazardRecognizer.h
+-- Installing: /usr/local/include/llvm/CodeGen/FunctionLoweringInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/AccelTable.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineDominanceFrontier.h
+-- Installing: /usr/local/include/llvm/CodeGen/RegisterBank.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineMemOperand.h
+-- Installing: /usr/local/include/llvm/CodeGen/SelectionDAGISel.h
+-- Installing: /usr/local/include/llvm/CodeGen/AsmPrinter.h
+-- Installing: /usr/local/include/llvm/CodeGen/LatencyPriorityQueue.h
+-- Installing: /usr/local/include/llvm/CodeGen/LiveRegUnits.h
+-- Installing: /usr/local/include/llvm/CodeGen/DIE.h
+-- Installing: /usr/local/include/llvm/CodeGen/DwarfStringPoolEntry.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineFrameInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineBranchProbabilityInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/LiveVariables.h
+-- Installing: /usr/local/include/llvm/CodeGen/RegAllocCommon.h
+-- Installing: /usr/local/include/llvm/CodeGen/SlotIndexes.h
+-- Installing: /usr/local/include/llvm/CodeGen/RegisterClassInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/VirtRegMap.h
+-- Installing: /usr/local/include/llvm/CodeGen/PreISelIntrinsicLowering.h
+-- Installing: /usr/local/include/llvm/CodeGen/UnreachableBlockElim.h
+-- Installing: /usr/local/include/llvm/CodeGen/ModuloSchedule.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachinePassRegistry.h
+-- Installing: /usr/local/include/llvm/CodeGen/SchedulerRegistry.h
+-- Installing: /usr/local/include/llvm/CodeGen/RDFLiveness.h
+-- Installing: /usr/local/include/llvm/CodeGen/TargetCallingConv.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineModuleInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/AtomicExpandUtils.h
+-- Installing: /usr/local/include/llvm/CodeGen/ExpandVectorPredication.h
+-- Installing: /usr/local/include/llvm/CodeGen/Passes.h
+-- Installing: /usr/local/include/llvm/CodeGen/LiveRegMatrix.h
+-- Installing: /usr/local/include/llvm/CodeGen/MIRSampleProfile.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineScheduler.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineOperand.h
+-- Installing: /usr/local/include/llvm/CodeGen/TailDuplicator.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineTraceMetrics.h
+-- Installing: /usr/local/include/llvm/CodeGen/RegisterBankInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/LiveIntervalUnion.h
+-- Installing: /usr/local/include/llvm/CodeGen/TargetSchedule.h
+-- Installing: /usr/local/include/llvm/CodeGen/LoopTraversal.h
+-- Installing: /usr/local/include/llvm/CodeGen/IndirectThunks.h
+-- Installing: /usr/local/include/llvm/CodeGen/CallingConvLower.h
+-- Installing: /usr/local/include/llvm/CodeGen/ReachingDefAnalysis.h
+-- Installing: /usr/local/include/llvm/CodeGen/CostTable.h
+-- Installing: /usr/local/include/llvm/CodeGen/LiveStacks.h
+-- Installing: /usr/local/include/llvm/CodeGen/RegAllocPBQP.h
+-- Installing: /usr/local/include/llvm/CodeGen/RDFRegisters.h
+-- Installing: /usr/local/include/llvm/CodeGen/MacroFusion.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineStableHash.h
+-- Installing: /usr/local/include/llvm/CodeGen/ExecutionDomainFix.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineRegionInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineRegisterInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineCycleAnalysis.h
+-- Installing: /usr/local/include/llvm/CodeGen/ISDOpcodes.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineInstr.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineInstrBundle.h
+-- Installing: /usr/local/include/llvm/CodeGen/WasmEHFuncInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/TargetInstrInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/TileShapeInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/GCMetadataPrinter.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineInstrBuilder.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineBasicBlock.h
+-- Installing: /usr/local/include/llvm/CodeGen/DbgEntityHistoryCalculator.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachinePipeliner.h
+-- Installing: /usr/local/include/llvm/CodeGen/ScheduleDAGMutation.h
+-- Installing: /usr/local/include/llvm/CodeGen/TargetLowering.h
+-- Installing: /usr/local/include/llvm/CodeGen/SDNodeProperties.td
+-- Installing: /usr/local/include/llvm/CodeGen/RegisterScavenging.h
+-- Installing: /usr/local/include/llvm/CodeGen/Analysis.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineOutliner.h
+-- Installing: /usr/local/include/llvm/CodeGen/LinkAllAsmWriterComponents.h
+-- Installing: /usr/local/include/llvm/CodeGen/SwiftErrorValueTracking.h
+-- Installing: /usr/local/include/llvm/CodeGen/SelectionDAGAddressAnalysis.h
+-- Installing: /usr/local/include/llvm/CodeGen/TargetRegisterInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/TargetPassConfig.h
+-- Installing: /usr/local/include/llvm/CodeGen/RegAllocRegistry.h
+-- Installing: /usr/local/include/llvm/CodeGen/TargetOpcodes.h
+-- Installing: /usr/local/include/llvm/CodeGen/PBQP
+-- Installing: /usr/local/include/llvm/CodeGen/PBQP/CostAllocator.h
+-- Installing: /usr/local/include/llvm/CodeGen/PBQP/Graph.h
+-- Installing: /usr/local/include/llvm/CodeGen/PBQP/Math.h
+-- Installing: /usr/local/include/llvm/CodeGen/PBQP/Solution.h
+-- Installing: /usr/local/include/llvm/CodeGen/PBQP/ReductionRules.h
+-- Installing: /usr/local/include/llvm/CodeGen/CalcSpillWeights.h
+-- Installing: /usr/local/include/llvm/CodeGen/LiveInterval.h
+-- Installing: /usr/local/include/llvm/CodeGen/SwitchLoweringUtils.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineModuleInfoImpls.h
+-- Installing: /usr/local/include/llvm/CodeGen/ReplaceWithVeclib.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineModuleSlotTracker.h
+-- Installing: /usr/local/include/llvm/CodeGen/LinkAllCodegenComponents.h
+-- Installing: /usr/local/include/llvm/CodeGen/LexicalScopes.h
+-- Installing: /usr/local/include/llvm/CodeGen/ResourcePriorityQueue.h
+-- Installing: /usr/local/include/llvm/CodeGen/ParallelCG.h
+-- Installing: /usr/local/include/llvm/CodeGen/LiveRangeCalc.h
+-- Installing: /usr/local/include/llvm/CodeGen/MIRFSDiscriminator.h
+-- Installing: /usr/local/include/llvm/CodeGen/StableHashing.h
+-- Installing: /usr/local/include/llvm/CodeGen/RuntimeLibcalls.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachinePassManager.h
+-- Installing: /usr/local/include/llvm/CodeGen/MultiHazardRecognizer.h
+-- Installing: /usr/local/include/llvm/CodeGen/Spiller.h
+-- Installing: /usr/local/include/llvm/CodeGen/GCMetadata.h
+-- Installing: /usr/local/include/llvm/CodeGen/MIRParser
+-- Installing: /usr/local/include/llvm/CodeGen/MIRParser/MIRParser.h
+-- Installing: /usr/local/include/llvm/CodeGen/MIRParser/MIParser.h
+-- Installing: /usr/local/include/llvm/CodeGen/CSEConfigBase.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineLoopInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineFunction.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineDominators.h
+-- Installing: /usr/local/include/llvm/CodeGen/FastISel.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineSSAUpdater.h
+-- Installing: /usr/local/include/llvm/CodeGen/DIEValue.def
+-- Installing: /usr/local/include/llvm/CodeGen/SelectionDAGTargetInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/PBQPRAConstraint.h
+-- Installing: /usr/local/include/llvm/CodeGen/TargetSubtargetInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/TargetLoweringObjectFileImpl.h
+-- Installing: /usr/local/include/llvm/CodeGen/RegisterPressure.h
+-- Installing: /usr/local/include/llvm/CodeGen/VLIWMachineScheduler.h
+-- Installing: /usr/local/include/llvm/CodeGen/ScheduleDAG.h
+-- Installing: /usr/local/include/llvm/CodeGen/AsmPrinterHandler.h
+-- Installing: /usr/local/include/llvm/CodeGen/RegisterUsageInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/LivePhysRegs.h
+-- Installing: /usr/local/include/llvm/CodeGen/CodeGenCommonISel.h
+-- Installing: /usr/local/include/llvm/CodeGen/CFIFixup.h
+-- Installing: /usr/local/include/llvm/CodeGen/TargetFrameLowering.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineSizeOpts.h
+-- Installing: /usr/local/include/llvm/CodeGen/BasicTTIImpl.h
+-- Installing: /usr/local/include/llvm/CodeGen/PseudoSourceValue.h
+-- Installing: /usr/local/include/llvm/CodeGen/ScheduleDFS.h
+-- Installing: /usr/local/include/llvm/CodeGen/LiveIntervalCalc.h
+-- Installing: /usr/local/include/llvm/CodeGen/SelectionDAGNodes.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineJumpTableInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/StackMaps.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineOptimizationRemarkEmitter.h
+-- Installing: /usr/local/include/llvm/CodeGen/LiveRangeEdit.h
+-- Installing: /usr/local/include/llvm/CodeGen/LowLevelType.h
+-- Installing: /usr/local/include/llvm/CodeGen/SelectionDAG.h
+-- Installing: /usr/local/include/llvm/CodeGen/EdgeBundles.h
+-- Installing: /usr/local/include/llvm/CodeGen/StackProtector.h
+-- Installing: /usr/local/include/llvm/CodeGen/WinEHFuncInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/DAGCombine.h
+-- Installing: /usr/local/include/llvm/CodeGen/MBFIWrapper.h
+-- Installing: /usr/local/include/llvm/CodeGen/NonRelocatableStringpool.h
+-- Installing: /usr/local/include/llvm/CodeGen/ValueTypes.h
+-- Installing: /usr/local/include/llvm/CodeGen/DebugHandlerBase.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/MachineIRBuilder.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/CSEInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/CSEMIRBuilder.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/MIPatternMatch.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/Legalizer.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/InstructionSelector.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/GISelWorkList.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/Localizer.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/LegalizerInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/InstructionSelectorImpl.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/CombinerHelper.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/LoadStoreOpt.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/LostDebugLocObserver.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/RegBankSelect.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/LegalizationArtifactCombiner.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/GISelChangeObserver.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/GISelKnownBits.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/LegalizerHelper.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/InstructionSelect.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/Combiner.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/InlineAsmLowering.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/IRTranslator.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/Utils.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/CombinerInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/CallLowering.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/GenericMachineInstrs.h
+-- Installing: /usr/local/include/llvm/CodeGen/GlobalISel/LegacyLegalizerInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/FaultMaps.h
+-- Installing: /usr/local/include/llvm/CodeGen/MIRPrinter.h
+-- Installing: /usr/local/include/llvm/CodeGen/ScoreboardHazardRecognizer.h
+-- Installing: /usr/local/include/llvm/CodeGen/Register.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineBlockFrequencyInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/CodeGenPassBuilder.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineSSAContext.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachinePassRegistry.def
+-- Installing: /usr/local/include/llvm/CodeGen/RDFGraph.h
+-- Installing: /usr/local/include/llvm/CodeGen/DFAPacketizer.h
+-- Installing: /usr/local/include/llvm/CodeGen/ValueTypes.td
+-- Installing: /usr/local/include/llvm/CodeGen/LiveIntervals.h
+-- Installing: /usr/local/include/llvm/CodeGen/IntrinsicLowering.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachinePostDominators.h
+-- Installing: /usr/local/include/llvm/CodeGen/MIRFormatter.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineFunctionPass.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineConstantPool.h
+-- Installing: /usr/local/include/llvm/CodeGen/AntiDepBreaker.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineCombinerPattern.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachORelocation.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineLoopUtils.h
+-- Installing: /usr/local/include/llvm/CodeGen/MachineInstrBundleIterator.h
+-- Installing: /usr/local/include/llvm/CodeGen/MIRYamlMapping.h
+-- Installing: /usr/local/include/llvm/CodeGen/BasicBlockSectionUtils.h
+-- Installing: /usr/local/include/llvm/CodeGen/LazyMachineBlockFrequencyInfo.h
+-- Installing: /usr/local/include/llvm/CodeGen/CommandFlags.h
+-- Installing: /usr/local/include/llvm/CodeGen/BasicBlockSectionsProfileReader.h
+-- Installing: /usr/local/include/llvm/CodeGen/ScheduleDAGInstrs.h
+-- Installing: /usr/local/include/llvm/Frontend
+-- Installing: /usr/local/include/llvm/Frontend/OpenMP
+-- Installing: /usr/local/include/llvm/Frontend/OpenMP/OMP.td
+-- Installing: /usr/local/include/llvm/Frontend/OpenMP/OMPConstants.h
+-- Installing: /usr/local/include/llvm/Frontend/OpenMP/OMPAssume.h
+-- Installing: /usr/local/include/llvm/Frontend/OpenMP/OMPIRBuilder.h
+-- Installing: /usr/local/include/llvm/Frontend/OpenMP/OMPGridValues.h
+-- Installing: /usr/local/include/llvm/Frontend/OpenMP/OMPContext.h
+-- Installing: /usr/local/include/llvm/Frontend/OpenMP/OMPKinds.def
+-- Installing: /usr/local/include/llvm/Frontend/OpenACC
+-- Installing: /usr/local/include/llvm/Frontend/OpenACC/ACC.td
+-- Installing: /usr/local/include/llvm/Frontend/Directive
+-- Installing: /usr/local/include/llvm/Frontend/Directive/DirectiveBase.td
+-- Installing: /usr/local/include/llvm/ObjCopy
+-- Installing: /usr/local/include/llvm/ObjCopy/XCOFF
+-- Installing: /usr/local/include/llvm/ObjCopy/XCOFF/XCOFFObjcopy.h
+-- Installing: /usr/local/include/llvm/ObjCopy/XCOFF/XCOFFConfig.h
+-- Installing: /usr/local/include/llvm/ObjCopy/ObjCopy.h
+-- Installing: /usr/local/include/llvm/ObjCopy/ELF
+-- Installing: /usr/local/include/llvm/ObjCopy/ELF/ELFConfig.h
+-- Installing: /usr/local/include/llvm/ObjCopy/ELF/ELFObjcopy.h
+-- Installing: /usr/local/include/llvm/ObjCopy/MachO
+-- Installing: /usr/local/include/llvm/ObjCopy/MachO/MachOConfig.h
+-- Installing: /usr/local/include/llvm/ObjCopy/MachO/MachOObjcopy.h
+-- Installing: /usr/local/include/llvm/ObjCopy/MultiFormatConfig.h
+-- Installing: /usr/local/include/llvm/ObjCopy/wasm
+-- Installing: /usr/local/include/llvm/ObjCopy/wasm/WasmObjcopy.h
+-- Installing: /usr/local/include/llvm/ObjCopy/wasm/WasmConfig.h
+-- Installing: /usr/local/include/llvm/ObjCopy/COFF
+-- Installing: /usr/local/include/llvm/ObjCopy/COFF/COFFConfig.h
+-- Installing: /usr/local/include/llvm/ObjCopy/COFF/COFFObjcopy.h
+-- Installing: /usr/local/include/llvm/ObjCopy/ConfigManager.h
+-- Installing: /usr/local/include/llvm/ObjCopy/CommonConfig.h
+-- Installing: /usr/local/include/llvm/Object
+-- Installing: /usr/local/include/llvm/Object/Wasm.h
+-- Installing: /usr/local/include/llvm/Object/WindowsResource.h
+-- Installing: /usr/local/include/llvm/Object/WindowsMachineFlag.h
+-- Installing: /usr/local/include/llvm/Object/TapiUniversal.h
+-- Installing: /usr/local/include/llvm/Object/FaultMapParser.h
+-- Installing: /usr/local/include/llvm/Object/Binary.h
+-- Installing: /usr/local/include/llvm/Object/StackMapParser.h
+-- Installing: /usr/local/include/llvm/Object/ELF.h
+-- Installing: /usr/local/include/llvm/Object/COFFModuleDefinition.h
+-- Installing: /usr/local/include/llvm/Object/COFFImportFile.h
+-- Installing: /usr/local/include/llvm/Object/DXContainer.h
+-- Installing: /usr/local/include/llvm/Object/TapiFile.h
+-- Installing: /usr/local/include/llvm/Object/ObjectFile.h
+-- Installing: /usr/local/include/llvm/Object/SymbolSize.h
+-- Installing: /usr/local/include/llvm/Object/Minidump.h
+-- Installing: /usr/local/include/llvm/Object/ELFObjectFile.h
+-- Installing: /usr/local/include/llvm/Object/MachOUniversal.h
+-- Installing: /usr/local/include/llvm/Object/CVDebugRecord.h
+-- Installing: /usr/local/include/llvm/Object/IRSymtab.h
+-- Installing: /usr/local/include/llvm/Object/ModuleSymbolTable.h
+-- Installing: /usr/local/include/llvm/Object/ELFTypes.h
+-- Installing: /usr/local/include/llvm/Object/COFF.h
+-- Installing: /usr/local/include/llvm/Object/ArchiveWriter.h
+-- Installing: /usr/local/include/llvm/Object/Archive.h
+-- Installing: /usr/local/include/llvm/Object/XCOFFObjectFile.h
+-- Installing: /usr/local/include/llvm/Object/SymbolicFile.h
+-- Installing: /usr/local/include/llvm/Object/MachOUniversalWriter.h
+-- Installing: /usr/local/include/llvm/Object/IRObjectFile.h
+-- Installing: /usr/local/include/llvm/Object/Error.h
+-- Installing: /usr/local/include/llvm/Object/OffloadBinary.h
+-- Installing: /usr/local/include/llvm/Object/RelocationResolver.h
+-- Installing: /usr/local/include/llvm/Object/MachO.h
+-- Installing: /usr/local/include/llvm/Object/Decompressor.h
+-- Installing: /usr/local/include/llvm/Support
+-- Installing: /usr/local/include/llvm/Support/Signposts.h
+-- Installing: /usr/local/include/llvm/Support/CRC.h
+-- Installing: /usr/local/include/llvm/Support/Capacity.h
+-- Installing: /usr/local/include/llvm/Support/ExtensibleRTTI.h
+-- Installing: /usr/local/include/llvm/Support/TargetParser.h
+-- Installing: /usr/local/include/llvm/Support/ARMTargetParser.def
+-- Installing: /usr/local/include/llvm/Support/Program.h
+-- Installing: /usr/local/include/llvm/Support/ScaledNumber.h
+-- Installing: /usr/local/include/llvm/Support/SwapByteOrder.h
+-- Installing: /usr/local/include/llvm/Support/AlignOf.h
+-- Installing: /usr/local/include/llvm/Support/RWMutex.h
+-- Installing: /usr/local/include/llvm/Support/Printable.h
+-- Installing: /usr/local/include/llvm/Support/Regex.h
+-- Installing: /usr/local/include/llvm/Support/ELFAttributes.h
+-- Installing: /usr/local/include/llvm/Support/Process.h
+-- Installing: /usr/local/include/llvm/Support/PrettyStackTrace.h
+-- Installing: /usr/local/include/llvm/Support/Mutex.h
+-- Installing: /usr/local/include/llvm/Support/Memory.h
+-- Installing: /usr/local/include/llvm/Support/Compiler.h
+-- Installing: /usr/local/include/llvm/Support/BinaryStream.h
+-- Installing: /usr/local/include/llvm/Support/ReverseIteration.h
+-- Installing: /usr/local/include/llvm/Support/FileSystem.h
+-- Installing: /usr/local/include/llvm/Support/BinaryByteStream.h
+-- Installing: /usr/local/include/llvm/Support/SMLoc.h
+-- Installing: /usr/local/include/llvm/Support/CFGDiff.h
+-- Installing: /usr/local/include/llvm/Support/Endian.h
+-- Installing: /usr/local/include/llvm/Support/raw_ostream.h
+-- Installing: /usr/local/include/llvm/Support/FileOutputBuffer.h
+-- Installing: /usr/local/include/llvm/Support/Windows
+-- Installing: /usr/local/include/llvm/Support/Windows/WindowsSupport.h
+-- Installing: /usr/local/include/llvm/Support/EndianStream.h
+-- Installing: /usr/local/include/llvm/Support/FileCollector.h
+-- Installing: /usr/local/include/llvm/Support/X86TargetParser.def
+-- Installing: /usr/local/include/llvm/Support/BinaryStreamRef.h
+-- Installing: /usr/local/include/llvm/Support/Host.h
+-- Installing: /usr/local/include/llvm/Support/Duration.h
+-- Installing: /usr/local/include/llvm/Support/BuryPointer.h
+-- Installing: /usr/local/include/llvm/Support/OnDiskHashTable.h
+-- Installing: /usr/local/include/llvm/Support/CSKYAttributes.h
+-- Installing: /usr/local/include/llvm/Support/WithColor.h
+-- Installing: /usr/local/include/llvm/Support/raw_os_ostream.h
+-- Installing: /usr/local/include/llvm/Support/DOTGraphTraits.h
+-- Installing: /usr/local/include/llvm/Support/YAMLParser.h
+-- Installing: /usr/local/include/llvm/Support/DJB.h
+-- Installing: /usr/local/include/llvm/Support/Discriminator.h
+-- Installing: /usr/local/include/llvm/Support/CSKYTargetParser.h
+-- Installing: /usr/local/include/llvm/Support/VersionTuple.h
+-- Installing: /usr/local/include/llvm/Support/CSKYAttributeParser.h
+-- Installing: /usr/local/include/llvm/Support/RecyclingAllocator.h
+-- Installing: /usr/local/include/llvm/Support/JSON.h
+-- Installing: /usr/local/include/llvm/Support/CSKYTargetParser.def
+-- Installing: /usr/local/include/llvm/Support/BinaryStreamArray.h
+-- Installing: /usr/local/include/llvm/Support/VirtualFileSystem.h
+-- Installing: /usr/local/include/llvm/Support/Unicode.h
+-- Installing: /usr/local/include/llvm/Support/SaveAndRestore.h
+-- Installing: /usr/local/include/llvm/Support/StringSaver.h
+-- Installing: /usr/local/include/llvm/Support/MachineValueType.h
+-- Installing: /usr/local/include/llvm/Support/AutoConvert.h
+-- Installing: /usr/local/include/llvm/Support/PointerLikeTypeTraits.h
+-- Installing: /usr/local/include/llvm/Support/YAMLTraits.h
+-- Installing: /usr/local/include/llvm/Support/Valgrind.h
+-- Installing: /usr/local/include/llvm/Support/MemoryBufferRef.h
+-- Installing: /usr/local/include/llvm/Support/RandomNumberGenerator.h
+-- Installing: /usr/local/include/llvm/Support/Registry.h
+-- Installing: /usr/local/include/llvm/Support/TypeName.h
+-- Installing: /usr/local/include/llvm/Support/TrailingObjects.h
+-- Installing: /usr/local/include/llvm/Support/AllocatorBase.h
+-- Installing: /usr/local/include/llvm/Support/ARMWinEH.h
+-- Installing: /usr/local/include/llvm/Support/CachePruning.h
+-- Installing: /usr/local/include/llvm/Support/ScopedPrinter.h
+-- Installing: /usr/local/include/llvm/Support/AMDHSAKernelDescriptor.h
+-- Installing: /usr/local/include/llvm/Support/FormatProviders.h
+-- Installing: /usr/local/include/llvm/Support/SourceMgr.h
+-- Installing: /usr/local/include/llvm/Support/TimeProfiler.h
+-- Installing: /usr/local/include/llvm/Support/SHA256.h
+-- Installing: /usr/local/include/llvm/Support/NativeFormatting.h
+-- Installing: /usr/local/include/llvm/Support/DataTypes.h
+-- Installing: /usr/local/include/llvm/Support/MipsABIFlags.h
+-- Installing: /usr/local/include/llvm/Support/ArrayRecycler.h
+-- Installing: /usr/local/include/llvm/Support/Allocator.h
+-- Installing: /usr/local/include/llvm/Support/FormatAdapters.h
+-- Installing: /usr/local/include/llvm/Support/FormattedStream.h
+-- Installing: /usr/local/include/llvm/Support/GlobPattern.h
+-- Installing: /usr/local/include/llvm/Support/KnownBits.h
+-- Installing: /usr/local/include/llvm/Support/MD5.h
+-- Installing: /usr/local/include/llvm/Support/BCD.h
+-- Installing: /usr/local/include/llvm/Support/OptimizedStructLayout.h
+-- Installing: /usr/local/include/llvm/Support/AArch64TargetParser.h
+-- Installing: /usr/local/include/llvm/Support/SHA1.h
+-- Installing: /usr/local/include/llvm/Support/Timer.h
+-- Installing: /usr/local/include/llvm/Support/CheckedArithmetic.h
+-- Installing: /usr/local/include/llvm/Support/GenericIteratedDominanceFrontier.h
+-- Installing: /usr/local/include/llvm/Support/GraphWriter.h
+-- Installing: /usr/local/include/llvm/Support/RISCVISAInfo.h
+-- Installing: /usr/local/include/llvm/Support/DXILOperationCommon.h
+-- Installing: /usr/local/include/llvm/Support/ThreadLocal.h
+-- Installing: /usr/local/include/llvm/Support/Win64EH.h
+-- Installing: /usr/local/include/llvm/Support/MemAlloc.h
+-- Installing: /usr/local/include/llvm/Support/DataExtractor.h
+-- Installing: /usr/local/include/llvm/Support/CrashRecoveryContext.h
+-- Installing: /usr/local/include/llvm/Support/Alignment.h
+-- Installing: /usr/local/include/llvm/Support/BinaryStreamError.h
+-- Installing: /usr/local/include/llvm/Support/ErrorHandling.h
+-- Installing: /usr/local/include/llvm/Support/PluginLoader.h
+-- Installing: /usr/local/include/llvm/Support/ErrorOr.h
+-- Installing: /usr/local/include/llvm/Support/InitLLVM.h
+-- Installing: /usr/local/include/llvm/Support/FormatVariadic.h
+-- Installing: /usr/local/include/llvm/Support/CBindingWrapping.h
+-- Installing: /usr/local/include/llvm/Support/Automaton.h
+-- Installing: /usr/local/include/llvm/Support/ARMBuildAttributes.h
+-- Installing: /usr/local/include/llvm/Support/BranchProbability.h
+-- Installing: /usr/local/include/llvm/Support/Casting.h
+-- Installing: /usr/local/include/llvm/Support/type_traits.h
+-- Installing: /usr/local/include/llvm/Support/Errc.h
+-- Installing: /usr/local/include/llvm/Support/MemoryBuffer.h
+-- Installing: /usr/local/include/llvm/Support/TargetSelect.h
+-- Installing: /usr/local/include/llvm/Support/LowLevelTypeImpl.h
+-- Installing: /usr/local/include/llvm/Support/CommandLine.h
+-- Installing: /usr/local/include/llvm/Support/SystemUtils.h
+-- Installing: /usr/local/include/llvm/Support/Recycler.h
+-- Installing: /usr/local/include/llvm/Support/GenericDomTree.h
+-- Installing: /usr/local/include/llvm/Support/TrigramIndex.h
+-- Installing: /usr/local/include/llvm/Support/BinaryStreamWriter.h
+-- Installing: /usr/local/include/llvm/Support/SMTAPI.h
+-- Installing: /usr/local/include/llvm/Support/PGOOptions.h
+-- Installing: /usr/local/include/llvm/Support/LineIterator.h
+-- Installing: /usr/local/include/llvm/Support/ARMTargetParser.h
+-- Installing: /usr/local/include/llvm/Support/FormatVariadicDetails.h
+-- Installing: /usr/local/include/llvm/Support/COM.h
+-- Installing: /usr/local/include/llvm/Support/RISCVAttributeParser.h
+-- Installing: /usr/local/include/llvm/Support/LEB128.h
+-- Installing: /usr/local/include/llvm/Support/Parallel.h
+-- Installing: /usr/local/include/llvm/Support/Format.h
+-- Installing: /usr/local/include/llvm/Support/MSVCErrorWorkarounds.h
+-- Installing: /usr/local/include/llvm/Support/TarWriter.h
+-- Installing: /usr/local/include/llvm/Support/Threading.h
+-- Installing: /usr/local/include/llvm/Support/ManagedStatic.h
+-- Installing: /usr/local/include/llvm/Support/circular_raw_ostream.h
+-- Installing: /usr/local/include/llvm/Support/X86DisassemblerDecoderCommon.h
+-- Installing: /usr/local/include/llvm/Support/ELFAttributeParser.h
+-- Installing: /usr/local/include/llvm/Support/Base64.h
+-- Installing: /usr/local/include/llvm/Support/ARMAttributeParser.h
+-- Installing: /usr/local/include/llvm/Support/RISCVTargetParser.def
+-- Installing: /usr/local/include/llvm/Support/Errno.h
+-- Installing: /usr/local/include/llvm/Support/Watchdog.h
+-- Installing: /usr/local/include/llvm/Support/raw_sha1_ostream.h
+-- Installing: /usr/local/include/llvm/Support/HashBuilder.h
+-- Installing: /usr/local/include/llvm/Support/MSP430AttributeParser.h
+-- Installing: /usr/local/include/llvm/Support/AtomicOrdering.h
+-- Installing: /usr/local/include/llvm/Support/Locale.h
+-- Installing: /usr/local/include/llvm/Support/xxhash.h
+-- Installing: /usr/local/include/llvm/Support/LICENSE.TXT
+-- Installing: /usr/local/include/llvm/Support/FileSystem
+-- Installing: /usr/local/include/llvm/Support/FileSystem/UniqueID.h
+-- Installing: /usr/local/include/llvm/Support/InstructionCost.h
+-- Installing: /usr/local/include/llvm/Support/Atomic.h
+-- Installing: /usr/local/include/llvm/Support/WindowsError.h
+-- Installing: /usr/local/include/llvm/Support/SmallVectorMemoryBuffer.h
+-- Installing: /usr/local/include/llvm/Support/TaskQueue.h
+-- Installing: /usr/local/include/llvm/Support/MSP430Attributes.h
+-- Installing: /usr/local/include/llvm/Support/GenericDomTreeConstruction.h
+-- Installing: /usr/local/include/llvm/Support/ToolOutputFile.h
+-- Installing: /usr/local/include/llvm/Support/X86TargetParser.h
+-- Installing: /usr/local/include/llvm/Support/ThreadPool.h
+-- Installing: /usr/local/include/llvm/Support/SymbolRemappingReader.h
+-- Installing: /usr/local/include/llvm/Support/CodeGenCoverage.h
+-- Installing: /usr/local/include/llvm/Support/Chrono.h
+-- Installing: /usr/local/include/llvm/Support/UnicodeCharRanges.h
+-- Installing: /usr/local/include/llvm/Support/LockFileManager.h
+-- Installing: /usr/local/include/llvm/Support/BlockFrequency.h
+-- Installing: /usr/local/include/llvm/Support/TargetOpcodes.def
+-- Installing: /usr/local/include/llvm/Support/SpecialCaseList.h
+-- Installing: /usr/local/include/llvm/Support/Debug.h
+-- Installing: /usr/local/include/llvm/Support/ARMEHABI.h
+-- Installing: /usr/local/include/llvm/Support/thread.h
+-- Installing: /usr/local/include/llvm/Support/BLAKE3.h
+-- Installing: /usr/local/include/llvm/Support/Solaris
+-- Installing: /usr/local/include/llvm/Support/Solaris/sys
+-- Installing: /usr/local/include/llvm/Support/Solaris/sys/regset.h
+-- Installing: /usr/local/include/llvm/Support/TypeSize.h
+-- Installing: /usr/local/include/llvm/Support/BinaryItemStream.h
+-- Installing: /usr/local/include/llvm/Support/Path.h
+-- Installing: /usr/local/include/llvm/Support/Signals.h
+-- Installing: /usr/local/include/llvm/Support/ItaniumManglingCanonicalizer.h
+-- Installing: /usr/local/include/llvm/Support/DivisionByConstantInfo.h
+-- Installing: /usr/local/include/llvm/Support/Error.h
+-- Installing: /usr/local/include/llvm/Support/CodeGen.h
+-- Installing: /usr/local/include/llvm/Support/FileUtilities.h
+-- Installing: /usr/local/include/llvm/Support/BinaryStreamReader.h
+-- Installing: /usr/local/include/llvm/Support/ExitCodes.h
+-- Installing: /usr/local/include/llvm/Support/FormatCommon.h
+-- Installing: /usr/local/include/llvm/Support/AMDGPUMetadata.h
+-- Installing: /usr/local/include/llvm/Support/CFGUpdate.h
+-- Installing: /usr/local/include/llvm/Support/DebugCounter.h
+-- Installing: /usr/local/include/llvm/Support/MathExtras.h
+-- Installing: /usr/local/include/llvm/Support/DynamicLibrary.h
+-- Installing: /usr/local/include/llvm/Support/Compression.h
+-- Installing: /usr/local/include/llvm/Support/SuffixTree.h
+-- Installing: /usr/local/include/llvm/Support/Caching.h
+-- Installing: /usr/local/include/llvm/Support/AArch64TargetParser.def
+-- Installing: /usr/local/include/llvm/Support/RISCVAttributes.h
+-- Installing: /usr/local/include/llvm/Support/ConvertUTF.h
+-- Installing: /usr/local/include/llvm/FileCheck
+-- Installing: /usr/local/include/llvm/FileCheck/FileCheck.h
+-- Installing: /usr/local/include/llvm/PassSupport.h
+-- Installing: /usr/local/include/llvm/Analysis
+-- Installing: /usr/local/include/llvm/Analysis/GlobalsModRef.h
+-- Installing: /usr/local/include/llvm/Analysis/InstSimplifyFolder.h
+-- Installing: /usr/local/include/llvm/Analysis/HeatUtils.h
+-- Installing: /usr/local/include/llvm/Analysis/DOTGraphTraitsPass.h
+-- Installing: /usr/local/include/llvm/Analysis/CFG.h
+-- Installing: /usr/local/include/llvm/Analysis/DemandedBits.h
+-- Installing: /usr/local/include/llvm/Analysis/MLInlineAdvisor.h
+-- Installing: /usr/local/include/llvm/Analysis/CaptureTracking.h
+-- Installing: /usr/local/include/llvm/Analysis/OverflowInstAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/ScalarEvolutionExpressions.h
+-- Installing: /usr/local/include/llvm/Analysis/DDG.h
+-- Installing: /usr/local/include/llvm/Analysis/TargetLibraryInfo.def
+-- Installing: /usr/local/include/llvm/Analysis/RegionIterator.h
+-- Installing: /usr/local/include/llvm/Analysis/BlockFrequencyInfo.h
+-- Installing: /usr/local/include/llvm/Analysis/IndirectCallPromotionAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/GuardUtils.h
+-- Installing: /usr/local/include/llvm/Analysis/MemoryBuiltins.h
+-- Installing: /usr/local/include/llvm/Analysis/CostModel.h
+-- Installing: /usr/local/include/llvm/Analysis/ScalarEvolutionAliasAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/CmpInstAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/EHPersonalities.h
+-- Installing: /usr/local/include/llvm/Analysis/CallGraphSCCPass.h
+-- Installing: /usr/local/include/llvm/Analysis/LoopAnalysisManager.h
+-- Installing: /usr/local/include/llvm/Analysis/TargetTransformInfo.h
+-- Installing: /usr/local/include/llvm/Analysis/SparsePropagation.h
+-- Installing: /usr/local/include/llvm/Analysis/Passes.h
+-- Installing: /usr/local/include/llvm/Analysis/DomTreeUpdater.h
+-- Installing: /usr/local/include/llvm/Analysis/ObjCARCAnalysisUtils.h
+-- Installing: /usr/local/include/llvm/Analysis/BlockFrequencyInfoImpl.h
+-- Installing: /usr/local/include/llvm/Analysis/ObjCARCAliasAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/MemorySSA.h
+-- Installing: /usr/local/include/llvm/Analysis/MemoryLocation.h
+-- Installing: /usr/local/include/llvm/Analysis/IntervalPartition.h
+-- Installing: /usr/local/include/llvm/Analysis/LoopUnrollAnalyzer.h
+-- Installing: /usr/local/include/llvm/Analysis/Interval.h
+-- Installing: /usr/local/include/llvm/Analysis/Utils
+-- Installing: /usr/local/include/llvm/Analysis/Utils/TFUtils.h
+-- Installing: /usr/local/include/llvm/Analysis/Utils/ImportedFunctionsInliningStatistics.h
+-- Installing: /usr/local/include/llvm/Analysis/Utils/Local.h
+-- Installing: /usr/local/include/llvm/Analysis/DominanceFrontierImpl.h
+-- Installing: /usr/local/include/llvm/Analysis/StackLifetime.h
+-- Installing: /usr/local/include/llvm/Analysis/NoInferenceModelRunner.h
+-- Installing: /usr/local/include/llvm/Analysis/InstructionPrecedenceTracking.h
+-- Installing: /usr/local/include/llvm/Analysis/RegionInfo.h
+-- Installing: /usr/local/include/llvm/Analysis/LegacyDivergenceAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/MemoryProfileInfo.h
+-- Installing: /usr/local/include/llvm/Analysis/CallGraph.h
+-- Installing: /usr/local/include/llvm/Analysis/AliasAnalysisEvaluator.h
+-- Installing: /usr/local/include/llvm/Analysis/IndirectCallVisitor.h
+-- Installing: /usr/local/include/llvm/Analysis/LoopAccessAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/ObjCARCInstKind.h
+-- Installing: /usr/local/include/llvm/Analysis/ValueLattice.h
+-- Installing: /usr/local/include/llvm/Analysis/DependenceGraphBuilder.h
+-- Installing: /usr/local/include/llvm/Analysis/LazyBranchProbabilityInfo.h
+-- Installing: /usr/local/include/llvm/Analysis/CFLSteensAliasAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/SyntheticCountsUtils.h
+-- Installing: /usr/local/include/llvm/Analysis/ConstantFolding.h
+-- Installing: /usr/local/include/llvm/Analysis/LazyValueInfo.h
+-- Installing: /usr/local/include/llvm/Analysis/TargetLibraryInfo.h
+-- Installing: /usr/local/include/llvm/Analysis/Delinearization.h
+-- Installing: /usr/local/include/llvm/Analysis/CodeMetrics.h
+-- Installing: /usr/local/include/llvm/Analysis/BasicAliasAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/DivergenceAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/ModuleSummaryAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/IteratedDominanceFrontier.h
+-- Installing: /usr/local/include/llvm/Analysis/LazyBlockFrequencyInfo.h
+-- Installing: /usr/local/include/llvm/Analysis/IVDescriptors.h
+-- Installing: /usr/local/include/llvm/Analysis/ScalarFuncs.def
+-- Installing: /usr/local/include/llvm/Analysis/MemDerefPrinter.h
+-- Installing: /usr/local/include/llvm/Analysis/CFLAliasAnalysisUtils.h
+-- Installing: /usr/local/include/llvm/Analysis/TargetFolder.h
+-- Installing: /usr/local/include/llvm/Analysis/AssumeBundleQueries.h
+-- Installing: /usr/local/include/llvm/Analysis/RegionPass.h
+-- Installing: /usr/local/include/llvm/Analysis/StackSafetyAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/TypeBasedAliasAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/InlineAdvisor.h
+-- Installing: /usr/local/include/llvm/Analysis/ScalarEvolutionDivision.h
+-- Installing: /usr/local/include/llvm/Analysis/InlineOrder.h
+-- Installing: /usr/local/include/llvm/Analysis/LoopCacheAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/ConstraintSystem.h
+-- Installing: /usr/local/include/llvm/Analysis/MemorySSAUpdater.h
+-- Installing: /usr/local/include/llvm/Analysis/BranchProbabilityInfo.h
+-- Installing: /usr/local/include/llvm/Analysis/ScopedNoAliasAA.h
+-- Installing: /usr/local/include/llvm/Analysis/InlineSizeEstimatorAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/ScalarEvolutionNormalization.h
+-- Installing: /usr/local/include/llvm/Analysis/Trace.h
+-- Installing: /usr/local/include/llvm/Analysis/AssumptionCache.h
+-- Installing: /usr/local/include/llvm/Analysis/DDGPrinter.h
+-- Installing: /usr/local/include/llvm/Analysis/Loads.h
+-- Installing: /usr/local/include/llvm/Analysis/PostDominators.h
+-- Installing: /usr/local/include/llvm/Analysis/Lint.h
+-- Installing: /usr/local/include/llvm/Analysis/ValueTracking.h
+-- Installing: /usr/local/include/llvm/Analysis/PhiValues.h
+-- Installing: /usr/local/include/llvm/Analysis/ObjCARCUtil.h
+-- Installing: /usr/local/include/llvm/Analysis/PHITransAddr.h
+-- Installing: /usr/local/include/llvm/Analysis/ValueLatticeUtils.h
+-- Installing: /usr/local/include/llvm/Analysis/InstCount.h
+-- Installing: /usr/local/include/llvm/Analysis/AliasSetTracker.h
+-- Installing: /usr/local/include/llvm/Analysis/OptimizationRemarkEmitter.h
+-- Installing: /usr/local/include/llvm/Analysis/MLModelRunner.h
+-- Installing: /usr/local/include/llvm/Analysis/InlineCost.h
+-- Installing: /usr/local/include/llvm/Analysis/RegionPrinter.h
+-- Installing: /usr/local/include/llvm/Analysis/IntervalIterator.h
+-- Installing: /usr/local/include/llvm/Analysis/TargetTransformInfoImpl.h
+-- Installing: /usr/local/include/llvm/Analysis/ModelUnderTrainingRunner.h
+-- Installing: /usr/local/include/llvm/Analysis/SyncDependenceAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/CFGPrinter.h
+-- Installing: /usr/local/include/llvm/Analysis/CGSCCPassManager.h
+-- Installing: /usr/local/include/llvm/Analysis/InstructionSimplify.h
+-- Installing: /usr/local/include/llvm/Analysis/DomPrinter.h
+-- Installing: /usr/local/include/llvm/Analysis/FunctionPropertiesAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/LoopPass.h
+-- Installing: /usr/local/include/llvm/Analysis/IRSimilarityIdentifier.h
+-- Installing: /usr/local/include/llvm/Analysis/DependenceAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/LoopInfo.h
+-- Installing: /usr/local/include/llvm/Analysis/TensorSpec.h
+-- Installing: /usr/local/include/llvm/Analysis/MemoryDependenceAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/ModuleDebugInfoPrinter.h
+-- Installing: /usr/local/include/llvm/Analysis/LazyCallGraph.h
+-- Installing: /usr/local/include/llvm/Analysis/VecFuncs.def
+-- Installing: /usr/local/include/llvm/Analysis/InlineModelFeatureMaps.h
+-- Installing: /usr/local/include/llvm/Analysis/CallPrinter.h
+-- Installing: /usr/local/include/llvm/Analysis/TypeMetadataUtils.h
+-- Installing: /usr/local/include/llvm/Analysis/PtrUseVisitor.h
+-- Installing: /usr/local/include/llvm/Analysis/ReplayInlineAdvisor.h
+-- Installing: /usr/local/include/llvm/Analysis/ScalarEvolution.h
+-- Installing: /usr/local/include/llvm/Analysis/LoopIterator.h
+-- Installing: /usr/local/include/llvm/Analysis/DominanceFrontier.h
+-- Installing: /usr/local/include/llvm/Analysis/ReleaseModeModelRunner.h
+-- Installing: /usr/local/include/llvm/Analysis/CycleAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/MustExecute.h
+-- Installing: /usr/local/include/llvm/Analysis/CFLAndersAliasAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/ProfileSummaryInfo.h
+-- Installing: /usr/local/include/llvm/Analysis/IVUsers.h
+-- Installing: /usr/local/include/llvm/Analysis/RegionInfoImpl.h
+-- Installing: /usr/local/include/llvm/Analysis/AliasAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/VectorUtils.h
+-- Installing: /usr/local/include/llvm/Analysis/LoopNestAnalysis.h
+-- Installing: /usr/local/include/llvm/Analysis/LoopInfoImpl.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine
+-- Installing: /usr/local/include/llvm/ExecutionEngine/OProfileWrapper.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Interpreter.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/ObjectCache.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/RuntimeDyldChecker.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/SpeculateAnalyses.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/Core.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/Shared
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/Shared/SimpleRemoteEPCUtils.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/Shared/OrcError.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/Shared/SimplePackedSerialization.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/Shared/TargetProcessControlTypes.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/Shared/WrapperFunctionUtils.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/Shared/AllocationActions.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/Shared/ExecutorAddress.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/Shared/OrcRTBridge.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/CompileOnDemandLayer.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/ExecutionUtils.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/EPCDynamicLibrarySearchGenerator.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/SimpleRemoteEPC.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/ObjectTransformLayer.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/ExecutorProcessControl.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/TargetProcess
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/TargetProcess/ExecutorSharedMemoryMapperService.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/TargetProcess/RegisterEHFrames.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/TargetProcess/SimpleRemoteEPCServer.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/TargetProcess/ExecutorBootstrapService.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/TargetProcess/SimpleExecutorMemoryManager.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/TargetProcess/SimpleExecutorDylibManager.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/TargetProcess/JITLoaderGDB.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/TargetProcess/TargetExecutionUtils.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/ELFNixPlatform.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/MemoryMapper.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/ObjectFileInterface.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/MachOPlatform.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/EPCEHFrameRegistrar.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/JITTargetMachineBuilder.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/RTDyldObjectLinkingLayer.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/Mangling.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/EPCDebugObjectRegistrar.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/LLJIT.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/IndirectionUtils.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/CompileUtils.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/ThreadSafeModule.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/EPCGenericJITLinkMemoryManager.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/Speculation.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/Layer.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/DebugUtils.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/DebugObjectManagerPlugin.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/DebuggerSupportPlugin.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/EPCIndirectionUtils.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/EPCGenericMemoryAccess.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/OrcABISupport.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/EPCGenericRTDyldMemoryManager.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/SymbolStringPool.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/IRCompileLayer.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/MapperJITLinkMemoryManager.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/LookupAndRecordAddrs.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/LazyReexports.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/ObjectLinkingLayer.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/IRTransformLayer.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/EPCGenericDylibManager.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/Orc/TaskDispatch.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/SectionMemoryManager.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/ExecutionEngine.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/RTDyldMemoryManager.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/GenericValue.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/RuntimeDyld.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/MCJIT.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITSymbol.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/ELF_x86_64.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/JITLinkDylib.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/ELF_aarch64.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/ELF.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/DWARFRecordSectionSplitter.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/MachO_x86_64.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/riscv.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/MachO_arm64.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/aarch64.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/x86_64.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/JITLink.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/TableManager.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/JITLinkMemoryManager.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/ELF_riscv.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/MemoryFlags.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/COFF.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/COFF_x86_64.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/EHFrameSupport.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITLink/MachO.h
+-- Installing: /usr/local/include/llvm/ExecutionEngine/JITEventListener.h
+-- Installing: /usr/local/include/llvm/ADT
+-- Installing: /usr/local/include/llvm/ADT/None.h
+-- Installing: /usr/local/include/llvm/ADT/TinyPtrVector.h
+-- Installing: /usr/local/include/llvm/ADT/PointerSumType.h
+-- Installing: /usr/local/include/llvm/ADT/STLForwardCompat.h
+-- Installing: /usr/local/include/llvm/ADT/SmallVector.h
+-- Installing: /usr/local/include/llvm/ADT/Optional.h
+-- Installing: /usr/local/include/llvm/ADT/PointerIntPair.h
+-- Installing: /usr/local/include/llvm/ADT/ScopeExit.h
+-- Installing: /usr/local/include/llvm/ADT/STLFunctionalExtras.h
+-- Installing: /usr/local/include/llvm/ADT/APFloat.h
+-- Installing: /usr/local/include/llvm/ADT/Bitfields.h
+-- Installing: /usr/local/include/llvm/ADT/StringSwitch.h
+-- Installing: /usr/local/include/llvm/ADT/iterator.h
+-- Installing: /usr/local/include/llvm/ADT/identity.h
+-- Installing: /usr/local/include/llvm/ADT/DeltaAlgorithm.h
+-- Installing: /usr/local/include/llvm/ADT/UniqueVector.h
+-- Installing: /usr/local/include/llvm/ADT/ImmutableList.h
+-- Installing: /usr/local/include/llvm/ADT/CachedHashString.h
+-- Installing: /usr/local/include/llvm/ADT/GraphTraits.h
+-- Installing: /usr/local/include/llvm/ADT/SmallSet.h
+-- Installing: /usr/local/include/llvm/ADT/BitmaskEnum.h
+-- Installing: /usr/local/include/llvm/ADT/iterator_range.h
+-- Installing: /usr/local/include/llvm/ADT/BreadthFirstIterator.h
+-- Installing: /usr/local/include/llvm/ADT/PackedVector.h
+-- Installing: /usr/local/include/llvm/ADT/STLArrayExtras.h
+-- Installing: /usr/local/include/llvm/ADT/DenseMapInfo.h
+-- Installing: /usr/local/include/llvm/ADT/simple_ilist.h
+-- Installing: /usr/local/include/llvm/ADT/EpochTracker.h
+-- Installing: /usr/local/include/llvm/ADT/SmallBitVector.h
+-- Installing: /usr/local/include/llvm/ADT/CoalescingBitVector.h
+-- Installing: /usr/local/include/llvm/ADT/CombinationGenerator.h
+-- Installing: /usr/local/include/llvm/ADT/PointerUnion.h
+-- Installing: /usr/local/include/llvm/ADT/SparseSet.h
+-- Installing: /usr/local/include/llvm/ADT/Hashing.h
+-- Installing: /usr/local/include/llvm/ADT/Statistic.h
+-- Installing: /usr/local/include/llvm/ADT/edit_distance.h
+-- Installing: /usr/local/include/llvm/ADT/SCCIterator.h
+-- Installing: /usr/local/include/llvm/ADT/StringExtras.h
+-- Installing: /usr/local/include/llvm/ADT/ilist_node.h
+-- Installing: /usr/local/include/llvm/ADT/StringSet.h
+-- Installing: /usr/local/include/llvm/ADT/ilist.h
+-- Installing: /usr/local/include/llvm/ADT/FunctionExtras.h
+-- Installing: /usr/local/include/llvm/ADT/IntEqClasses.h
+-- Installing: /usr/local/include/llvm/ADT/bit.h
+-- Installing: /usr/local/include/llvm/ADT/GenericSSAContext.h
+-- Installing: /usr/local/include/llvm/ADT/FloatingPointMode.h
+-- Installing: /usr/local/include/llvm/ADT/StringMapEntry.h
+-- Installing: /usr/local/include/llvm/ADT/Sequence.h
+-- Installing: /usr/local/include/llvm/ADT/ImmutableMap.h
+-- Installing: /usr/local/include/llvm/ADT/FoldingSet.h
+-- Installing: /usr/local/include/llvm/ADT/APSInt.h
+-- Installing: /usr/local/include/llvm/ADT/fallible_iterator.h
+-- Installing: /usr/local/include/llvm/ADT/SparseBitVector.h
+-- Installing: /usr/local/include/llvm/ADT/EquivalenceClasses.h
+-- Installing: /usr/local/include/llvm/ADT/Twine.h
+-- Installing: /usr/local/include/llvm/ADT/STLExtras.h
+-- Installing: /usr/local/include/llvm/ADT/ilist_iterator.h
+-- Installing: /usr/local/include/llvm/ADT/AllocatorList.h
+-- Installing: /usr/local/include/llvm/ADT/IndexedMap.h
+-- Installing: /usr/local/include/llvm/ADT/PostOrderIterator.h
+-- Installing: /usr/local/include/llvm/ADT/PriorityQueue.h
+-- Installing: /usr/local/include/llvm/ADT/Any.h
+-- Installing: /usr/local/include/llvm/ADT/ilist_node_options.h
+-- Installing: /usr/local/include/llvm/ADT/TypeSwitch.h
+-- Installing: /usr/local/include/llvm/ADT/EnumeratedArray.h
+-- Installing: /usr/local/include/llvm/ADT/SetVector.h
+-- Installing: /usr/local/include/llvm/ADT/StringRef.h
+-- Installing: /usr/local/include/llvm/ADT/DepthFirstIterator.h
+-- Installing: /usr/local/include/llvm/ADT/ScopedHashTable.h
+-- Installing: /usr/local/include/llvm/ADT/PriorityWorklist.h
+-- Installing: /usr/local/include/llvm/ADT/SparseMultiSet.h
+-- Installing: /usr/local/include/llvm/ADT/SetOperations.h
+-- Installing: /usr/local/include/llvm/ADT/ImmutableSet.h
+-- Installing: /usr/local/include/llvm/ADT/ilist_node_base.h
+-- Installing: /usr/local/include/llvm/ADT/DAGDeltaAlgorithm.h
+-- Installing: /usr/local/include/llvm/ADT/IntrusiveRefCntPtr.h
+-- Installing: /usr/local/include/llvm/ADT/GenericCycleInfo.h
+-- Installing: /usr/local/include/llvm/ADT/DenseMap.h
+-- Installing: /usr/local/include/llvm/ADT/DenseSet.h
+-- Installing: /usr/local/include/llvm/ADT/GenericCycleImpl.h
+-- Installing: /usr/local/include/llvm/ADT/APFixedPoint.h
+-- Installing: /usr/local/include/llvm/ADT/StringMap.h
+-- Installing: /usr/local/include/llvm/ADT/SmallPtrSet.h
+-- Installing: /usr/local/include/llvm/ADT/APInt.h
+-- Installing: /usr/local/include/llvm/ADT/AddressRanges.h
+-- Installing: /usr/local/include/llvm/ADT/Triple.h
+-- Installing: /usr/local/include/llvm/ADT/SmallString.h
+-- Installing: /usr/local/include/llvm/ADT/ilist_base.h
+-- Installing: /usr/local/include/llvm/ADT/IntervalMap.h
+-- Installing: /usr/local/include/llvm/ADT/BitVector.h
+-- Installing: /usr/local/include/llvm/ADT/MapVector.h
+-- Installing: /usr/local/include/llvm/ADT/PointerEmbeddedInt.h
+-- Installing: /usr/local/include/llvm/ADT/DirectedGraph.h
+-- Installing: /usr/local/include/llvm/ADT/ArrayRef.h
+-- Installing: /usr/local/include/llvm/XRay
+-- Installing: /usr/local/include/llvm/XRay/FileHeaderReader.h
+-- Installing: /usr/local/include/llvm/XRay/BlockPrinter.h
+-- Installing: /usr/local/include/llvm/XRay/BlockIndexer.h
+-- Installing: /usr/local/include/llvm/XRay/Graph.h
+-- Installing: /usr/local/include/llvm/XRay/XRayRecord.h
+-- Installing: /usr/local/include/llvm/XRay/FDRRecordProducer.h
+-- Installing: /usr/local/include/llvm/XRay/FDRRecordConsumer.h
+-- Installing: /usr/local/include/llvm/XRay/FDRRecords.h
+-- Installing: /usr/local/include/llvm/XRay/RecordPrinter.h
+-- Installing: /usr/local/include/llvm/XRay/FDRTraceWriter.h
+-- Installing: /usr/local/include/llvm/XRay/YAMLXRayRecord.h
+-- Installing: /usr/local/include/llvm/XRay/Trace.h
+-- Installing: /usr/local/include/llvm/XRay/Profile.h
+-- Installing: /usr/local/include/llvm/XRay/BlockVerifier.h
+-- Installing: /usr/local/include/llvm/XRay/FDRTraceExpander.h
+-- Installing: /usr/local/include/llvm/XRay/FDRLogBuilder.h
+-- Installing: /usr/local/include/llvm/XRay/InstrumentationMap.h
+-- Installing: /usr/local/include/llvm/Passes
+-- Installing: /usr/local/include/llvm/Passes/StandardInstrumentations.h
+-- Installing: /usr/local/include/llvm/Passes/PassBuilder.h
+-- Installing: /usr/local/include/llvm/Passes/PassPlugin.h
+-- Installing: /usr/local/include/llvm/Passes/OptimizationLevel.h
+-- Installing: /usr/local/include/llvm/Testing
+-- Installing: /usr/local/include/llvm/Testing/Support
+-- Installing: /usr/local/include/llvm/Testing/Support/Annotations.h
+-- Installing: /usr/local/include/llvm/Testing/Support/SupportHelpers.h
+-- Installing: /usr/local/include/llvm/Testing/Support/Error.h
+-- Installing: /usr/local/include/llvm/WindowsManifest
+-- Installing: /usr/local/include/llvm/WindowsManifest/WindowsManifestMerger.h
+-- Installing: /usr/local/include/llvm/ProfileData
+-- Installing: /usr/local/include/llvm/ProfileData/InstrProf.h
+-- Installing: /usr/local/include/llvm/ProfileData/MemProf.h
+-- Installing: /usr/local/include/llvm/ProfileData/ProfileCommon.h
+-- Installing: /usr/local/include/llvm/ProfileData/InstrProfCorrelator.h
+-- Installing: /usr/local/include/llvm/ProfileData/InstrProfReader.h
+-- Installing: /usr/local/include/llvm/ProfileData/RawMemProfReader.h
+-- Installing: /usr/local/include/llvm/ProfileData/SampleProf.h
+-- Installing: /usr/local/include/llvm/ProfileData/MemProfData.inc
+-- Installing: /usr/local/include/llvm/ProfileData/Coverage
+-- Installing: /usr/local/include/llvm/ProfileData/Coverage/CoverageMappingReader.h
+-- Installing: /usr/local/include/llvm/ProfileData/Coverage/CoverageMappingWriter.h
+-- Installing: /usr/local/include/llvm/ProfileData/Coverage/CoverageMapping.h
+-- Installing: /usr/local/include/llvm/ProfileData/SampleProfWriter.h
+-- Installing: /usr/local/include/llvm/ProfileData/MIBEntryDef.inc
+-- Installing: /usr/local/include/llvm/ProfileData/SampleProfReader.h
+-- Installing: /usr/local/include/llvm/ProfileData/InstrProfData.inc
+-- Installing: /usr/local/include/llvm/ProfileData/InstrProfWriter.h
+-- Installing: /usr/local/include/llvm/ProfileData/GCOV.h
+-- Installing: /usr/local/include/llvm/LineEditor
+-- Installing: /usr/local/include/llvm/LineEditor/LineEditor.h
+-- Installing: /usr/local/include/llvm/InterfaceStub
+-- Installing: /usr/local/include/llvm/InterfaceStub/IFSStub.h
+-- Installing: /usr/local/include/llvm/InterfaceStub/ELFObjHandler.h
+-- Installing: /usr/local/include/llvm/InterfaceStub/IFSHandler.h
+-- Installing: /usr/local/include/llvm/PassRegistry.h
+-- Installing: /usr/local/include/llvm/IRReader
+-- Installing: /usr/local/include/llvm/IRReader/IRReader.h
+-- Installing: /usr/local/include/llvm/TableGen
+-- Installing: /usr/local/include/llvm/TableGen/Main.h
+-- Installing: /usr/local/include/llvm/TableGen/TableGenBackend.h
+-- Installing: /usr/local/include/llvm/TableGen/SetTheory.h
+-- Installing: /usr/local/include/llvm/TableGen/StringMatcher.h
+-- Installing: /usr/local/include/llvm/TableGen/Record.h
+-- Installing: /usr/local/include/llvm/TableGen/Automaton.td
+-- Installing: /usr/local/include/llvm/TableGen/Parser.h
+-- Installing: /usr/local/include/llvm/TableGen/DirectiveEmitter.h
+-- Installing: /usr/local/include/llvm/TableGen/StringToOffsetTable.h
+-- Installing: /usr/local/include/llvm/TableGen/SearchableTable.td
+-- Installing: /usr/local/include/llvm/TableGen/Error.h
+-- Installing: /usr/local/include/llvm/MC
+-- Installing: /usr/local/include/llvm/MC/MCParser
+-- Installing: /usr/local/include/llvm/MC/MCParser/MCAsmParserUtils.h
+-- Installing: /usr/local/include/llvm/MC/MCParser/MCTargetAsmParser.h
+-- Installing: /usr/local/include/llvm/MC/MCParser/AsmCond.h
+-- Installing: /usr/local/include/llvm/MC/MCParser/AsmLexer.h
+-- Installing: /usr/local/include/llvm/MC/MCParser/MCAsmParser.h
+-- Installing: /usr/local/include/llvm/MC/MCParser/MCAsmParserExtension.h
+-- Installing: /usr/local/include/llvm/MC/MCParser/MCAsmLexer.h
+-- Installing: /usr/local/include/llvm/MC/MCParser/MCParsedAsmOperand.h
+-- Installing: /usr/local/include/llvm/MC/MCWinEH.h
+-- Installing: /usr/local/include/llvm/MC/MCLabel.h
+-- Installing: /usr/local/include/llvm/MC/MCELFObjectWriter.h
+-- Installing: /usr/local/include/llvm/MC/MCDisassembler
+-- Installing: /usr/local/include/llvm/MC/MCDisassembler/MCExternalSymbolizer.h
+-- Installing: /usr/local/include/llvm/MC/MCDisassembler/MCDisassembler.h
+-- Installing: /usr/local/include/llvm/MC/MCDisassembler/MCRelocationInfo.h
+-- Installing: /usr/local/include/llvm/MC/MCDisassembler/MCSymbolizer.h
+-- Installing: /usr/local/include/llvm/MC/MCDwarf.h
+-- Installing: /usr/local/include/llvm/MC/TargetRegistry.h
+-- Installing: /usr/local/include/llvm/MC/MCSymbol.h
+-- Installing: /usr/local/include/llvm/MC/MCAsmInfoDarwin.h
+-- Installing: /usr/local/include/llvm/MC/MCWinCOFFObjectWriter.h
+-- Installing: /usr/local/include/llvm/MC/ConstantPools.h
+-- Installing: /usr/local/include/llvm/MC/MCSectionELF.h
+-- Installing: /usr/local/include/llvm/MC/MCSectionCOFF.h
+-- Installing: /usr/local/include/llvm/MC/MCFragment.h
+-- Installing: /usr/local/include/llvm/MC/MCSPIRVStreamer.h
+-- Installing: /usr/local/include/llvm/MC/MCAsmMacro.h
+-- Installing: /usr/local/include/llvm/MC/MCContext.h
+-- Installing: /usr/local/include/llvm/MC/MCTargetOptions.h
+-- Installing: /usr/local/include/llvm/MC/MCFixup.h
+-- Installing: /usr/local/include/llvm/MC/MCSectionXCOFF.h
+-- Installing: /usr/local/include/llvm/MC/MCAssembler.h
+-- Installing: /usr/local/include/llvm/MC/MCLinkerOptimizationHint.h
+-- Installing: /usr/local/include/llvm/MC/MCWin64EH.h
+-- Installing: /usr/local/include/llvm/MC/MCInst.h
+-- Installing: /usr/local/include/llvm/MC/SectionKind.h
+-- Installing: /usr/local/include/llvm/MC/MCStreamer.h
+-- Installing: /usr/local/include/llvm/MC/MCInstrDesc.h
+-- Installing: /usr/local/include/llvm/MC/MCAsmInfoGOFF.h
+-- Installing: /usr/local/include/llvm/MC/MCSymbolXCOFF.h
+-- Installing: /usr/local/include/llvm/MC/MCXCOFFStreamer.h
+-- Installing: /usr/local/include/llvm/MC/MCAsmInfo.h
+-- Installing: /usr/local/include/llvm/MC/MCAsmBackend.h
+-- Installing: /usr/local/include/llvm/MC/MCTargetOptionsCommandFlags.h
+-- Installing: /usr/local/include/llvm/MC/MCAsmInfoCOFF.h
+-- Installing: /usr/local/include/llvm/MC/MCRegisterInfo.h
+-- Installing: /usr/local/include/llvm/MC/MCSectionMachO.h
+-- Installing: /usr/local/include/llvm/MC/MCWasmStreamer.h
+-- Installing: /usr/local/include/llvm/MC/MCWasmObjectWriter.h
+-- Installing: /usr/local/include/llvm/MC/MCAsmInfoXCOFF.h
+-- Installing: /usr/local/include/llvm/MC/MCSectionWasm.h
+-- Installing: /usr/local/include/llvm/MC/MCObjectFileInfo.h
+-- Installing: /usr/local/include/llvm/MC/MCCodeEmitter.h
+-- Installing: /usr/local/include/llvm/MC/MCObjectStreamer.h
+-- Installing: /usr/local/include/llvm/MC/MCSchedule.h
+-- Installing: /usr/local/include/llvm/MC/MCSectionDXContainer.h
+-- Installing: /usr/local/include/llvm/MC/MCInstrAnalysis.h
+-- Installing: /usr/local/include/llvm/MC/MCDirectives.h
+-- Installing: /usr/local/include/llvm/MC/MCSymbolGOFF.h
+-- Installing: /usr/local/include/llvm/MC/MCDXContainerWriter.h
+-- Installing: /usr/local/include/llvm/MC/MCInstBuilder.h
+-- Installing: /usr/local/include/llvm/MC/MCPseudoProbe.h
+-- Installing: /usr/local/include/llvm/MC/MCSymbolWasm.h
+-- Installing: /usr/local/include/llvm/MC/MCSection.h
+-- Installing: /usr/local/include/llvm/MC/MCDXContainerStreamer.h
+-- Installing: /usr/local/include/llvm/MC/MCInstPrinter.h
+-- Installing: /usr/local/include/llvm/MC/MCDecoderOps.h
+-- Installing: /usr/local/include/llvm/MC/MCAsmInfoWasm.h
+-- Installing: /usr/local/include/llvm/MC/MCFixupKindInfo.h
+-- Installing: /usr/local/include/llvm/MC/SubtargetFeature.h
+-- Installing: /usr/local/include/llvm/MC/StringTableBuilder.h
+-- Installing: /usr/local/include/llvm/MC/MCXCOFFObjectWriter.h
+-- Installing: /usr/local/include/llvm/MC/MCSymbolMachO.h
+-- Installing: /usr/local/include/llvm/MC/MCExpr.h
+-- Installing: /usr/local/include/llvm/MC/MCSymbolCOFF.h
+-- Installing: /usr/local/include/llvm/MC/MCObjectWriter.h
+-- Installing: /usr/local/include/llvm/MC/MCCodeView.h
+-- Installing: /usr/local/include/llvm/MC/MCMachObjectWriter.h
+-- Installing: /usr/local/include/llvm/MC/MCAsmLayout.h
+-- Installing: /usr/local/include/llvm/MC/MCWinCOFFStreamer.h
+-- Installing: /usr/local/include/llvm/MC/MCSectionGOFF.h
+-- Installing: /usr/local/include/llvm/MC/MCELFStreamer.h
+-- Installing: /usr/local/include/llvm/MC/MCInstrInfo.h
+-- Installing: /usr/local/include/llvm/MC/MCSymbolELF.h
+-- Installing: /usr/local/include/llvm/MC/MCSubtargetInfo.h
+-- Installing: /usr/local/include/llvm/MC/MCInstrItineraries.h
+-- Installing: /usr/local/include/llvm/MC/MachineLocation.h
+-- Installing: /usr/local/include/llvm/MC/MCValue.h
+-- Installing: /usr/local/include/llvm/MC/MCSectionSPIRV.h
+-- Installing: /usr/local/include/llvm/MC/MCRegister.h
+-- Installing: /usr/local/include/llvm/MC/MCAsmInfoELF.h
+-- Installing: /usr/local/include/llvm/MC/LaneBitmask.h
+-- Installing: /usr/local/include/llvm/MC/MCSPIRVObjectWriter.h
+-- Installing: /usr/local/include/llvm/Option
+-- Installing: /usr/local/include/llvm/Option/OptSpecifier.h
+-- Installing: /usr/local/include/llvm/Option/ArgList.h
+-- Installing: /usr/local/include/llvm/Option/Arg.h
+-- Installing: /usr/local/include/llvm/Option/OptParser.td
+-- Installing: /usr/local/include/llvm/Option/Option.h
+-- Installing: /usr/local/include/llvm/Option/OptTable.h
+-- Installing: /usr/local/include/llvm/Demangle
+-- Installing: /usr/local/include/llvm/Demangle/DemangleConfig.h
+-- Installing: /usr/local/include/llvm/Demangle/ItaniumDemangle.h
+-- Installing: /usr/local/include/llvm/Demangle/Demangle.h
+-- Installing: /usr/local/include/llvm/Demangle/StringView.h
+-- Installing: /usr/local/include/llvm/Demangle/MicrosoftDemangleNodes.h
+-- Installing: /usr/local/include/llvm/Demangle/MicrosoftDemangle.h
+-- Installing: /usr/local/include/llvm/Demangle/ItaniumNodes.def
+-- Installing: /usr/local/include/llvm/Demangle/Utility.h
+-- Installing: /usr/local/include/llvm/DebugInfo
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/IPDBDataStream.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolTypeUDT.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBTypes.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBContext.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolFuncDebugEnd.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolData.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/ConcreteSymbolEnumerator.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolLabel.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolPublicSymbol.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolUnknown.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolTypeVTable.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolAnnotation.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolTypeCustom.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/IPDBEnumChildren.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolTypeManaged.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolTypeVTableShape.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolCustom.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolTypePointer.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolTypeArray.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolTypeBaseClass.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/IPDBSession.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolTypeFriend.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolFuncDebugStart.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymDumper.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolCompilandEnv.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolCompilandDetails.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolTypeBuiltin.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolFunc.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolExe.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/IPDBSourceFile.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/PublicsStream.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeInlineSiteSymbol.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/GlobalsStream.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeTypeUDT.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/PDBStringTableBuilder.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeSession.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/TpiStreamBuilder.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeEnumModules.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/FormatUtil.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/DbiModuleList.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/RawTypes.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NamedStreamMap.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeExeSymbol.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/InfoStreamBuilder.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeEnumTypes.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeTypeTypedef.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/EnumTables.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/ISectionContribVisitor.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/Hash.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/SymbolCache.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/GSIStreamBuilder.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeSourceFile.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/RawError.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeTypePointer.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeCompilandSymbol.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/RawConstants.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/DbiStream.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeEnumSymbols.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/InfoStream.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeEnumLineNumbers.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeFunctionSymbol.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeTypeBuiltin.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/DbiStreamBuilder.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeLineNumber.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/LinePrinter.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeTypeFunctionSig.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/DbiModuleDescriptor.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeTypeVTShape.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/InputFile.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeEnumInjectedSources.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/DbiModuleDescriptorBuilder.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeTypeArray.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeSymbolEnumerator.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/TpiHashing.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/PDBStringTable.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/InjectedSourceStream.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/PDBFile.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeRawSymbol.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/TpiStream.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/ModuleDebugStream.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeTypeEnum.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/Formatters.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/SymbolStream.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/PDBFileBuilder.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativeEnumGlobals.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/HashTable.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/Native/NativePublicSymbol.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolBlock.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/IPDBRawSymbol.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/UDTLayout.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbol.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolTypeEnum.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/IPDBTable.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/IPDBLineNumber.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/GenericError.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolTypeDimension.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolTypeTypedef.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolThunk.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolTypeFunctionArg.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolCompiland.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/IPDBInjectedSource.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolTypeFunctionSig.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDB.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/IPDBFrameData.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBExtras.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIAEnumLineNumbers.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIASourceFile.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIARawSymbol.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIAError.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIAUtils.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIAEnumDebugStreams.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIATable.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIAEnumFrameData.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIASectionContrib.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIAEnumSymbols.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIAEnumTables.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIAEnumSourceFiles.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIADataStream.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIAInjectedSource.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIAEnumSectionContribs.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIASupport.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIAFrameData.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIASession.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIALineNumber.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/DIA/DIAEnumInjectedSources.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/IPDBSectionContrib.h
+-- Installing: /usr/local/include/llvm/DebugInfo/PDB/PDBSymbolUsingNamespace.h
+-- Installing: /usr/local/include/llvm/DebugInfo/MSF
+-- Installing: /usr/local/include/llvm/DebugInfo/MSF/MSFCommon.h
+-- Installing: /usr/local/include/llvm/DebugInfo/MSF/MappedBlockStream.h
+-- Installing: /usr/local/include/llvm/DebugInfo/MSF/IMSFFile.h
+-- Installing: /usr/local/include/llvm/DebugInfo/MSF/MSFBuilder.h
+-- Installing: /usr/local/include/llvm/DebugInfo/MSF/MSFError.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DIContext.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/TypeRecord.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/TypeSymbolEmitter.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/TypeIndex.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/SymbolSerializer.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/CVSymbolVisitor.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/TypeTableCollection.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/DebugChecksumsSubsection.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/DebugLinesSubsection.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/CodeViewSymbols.def
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/DebugInlineeLinesSubsection.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/RecordName.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/CodeViewError.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/CVRecord.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/EnumTables.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/FunctionId.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/TypeDeserializer.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/DebugSymbolRVASubsection.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/GUID.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/StringsAndChecksums.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/SimpleTypeSerializer.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/SymbolRecord.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/AppendingTypeTableBuilder.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/SymbolDumper.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/SymbolVisitorDelegate.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/SymbolVisitorCallbacks.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/TypeIndexDiscovery.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/CodeViewRecordIO.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/DebugCrossExSubsection.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/TypeDumpVisitor.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/Line.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/TypeCollection.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/MergingTypeTableBuilder.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/CodeView.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/TypeRecordHelpers.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/DebugSubsectionRecord.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/GlobalTypeTableBuilder.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/DebugCrossImpSubsection.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/TypeRecordMapping.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/DebugUnknownSubsection.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/TypeVisitorCallbacks.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/DebugSymbolsSubsection.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/SymbolVisitorCallbackPipeline.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/SymbolRecordMapping.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/RecordSerialization.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/SymbolDeserializer.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/SymbolRecordHelpers.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/CVTypeVisitor.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/DebugSubsectionVisitor.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/Formatters.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/DebugFrameDataSubsection.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/CodeViewTypes.def
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/SymbolDumpDelegate.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/DebugStringTableSubsection.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/DebugSubsection.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/TypeVisitorCallbackPipeline.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/CodeViewRegisters.def
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/LazyRandomTypeCollection.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/TypeStreamMerger.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/TypeHashing.h
+-- Installing: /usr/local/include/llvm/DebugInfo/CodeView/ContinuationRecordBuilder.h
+-- Installing: /usr/local/include/llvm/DebugInfo/GSYM
+-- Installing: /usr/local/include/llvm/DebugInfo/GSYM/Header.h
+-- Installing: /usr/local/include/llvm/DebugInfo/GSYM/GsymCreator.h
+-- Installing: /usr/local/include/llvm/DebugInfo/GSYM/DwarfTransformer.h
+-- Installing: /usr/local/include/llvm/DebugInfo/GSYM/LookupResult.h
+-- Installing: /usr/local/include/llvm/DebugInfo/GSYM/LineTable.h
+-- Installing: /usr/local/include/llvm/DebugInfo/GSYM/LineEntry.h
+-- Installing: /usr/local/include/llvm/DebugInfo/GSYM/GsymReader.h
+-- Installing: /usr/local/include/llvm/DebugInfo/GSYM/InlineInfo.h
+-- Installing: /usr/local/include/llvm/DebugInfo/GSYM/FileWriter.h
+-- Installing: /usr/local/include/llvm/DebugInfo/GSYM/ObjectFileTransformer.h
+-- Installing: /usr/local/include/llvm/DebugInfo/GSYM/StringTable.h
+-- Installing: /usr/local/include/llvm/DebugInfo/GSYM/FunctionInfo.h
+-- Installing: /usr/local/include/llvm/DebugInfo/GSYM/ExtractRanges.h
+-- Installing: /usr/local/include/llvm/DebugInfo/GSYM/FileEntry.h
+-- Installing: /usr/local/include/llvm/DebugInfo/Symbolize
+-- Installing: /usr/local/include/llvm/DebugInfo/Symbolize/DIPrinter.h
+-- Installing: /usr/local/include/llvm/DebugInfo/Symbolize/SymbolizableModule.h
+-- Installing: /usr/local/include/llvm/DebugInfo/Symbolize/Markup.h
+-- Installing: /usr/local/include/llvm/DebugInfo/Symbolize/SymbolizableObjectFile.h
+-- Installing: /usr/local/include/llvm/DebugInfo/Symbolize/Symbolize.h
+-- Installing: /usr/local/include/llvm/DebugInfo/Symbolize/DIFetcher.h
+-- Installing: /usr/local/include/llvm/DebugInfo/Symbolize/MarkupFilter.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFDebugAranges.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFDebugRangeList.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFDebugAbbrev.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFUnit.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFDie.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFDebugAddr.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFDebugFrame.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFAddressRange.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFDebugPubTable.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFFormValue.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFLocationExpression.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFSection.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFListTable.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFContext.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFAbbreviationDeclaration.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFVerifier.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFCompileUnit.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFRelocMap.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFDebugMacro.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFTypePrinter.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFExpression.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFDebugLine.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFObject.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFDebugRnglists.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFDebugInfoEntry.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFAcceleratorTable.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFGdbIndex.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFDebugArangeSet.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFAttribute.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFDataExtractor.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFUnitIndex.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFDebugLoc.h
+-- Installing: /usr/local/include/llvm/DebugInfo/DWARF/DWARFTypeUnit.h
+-- Installing: /usr/local/include/llvm/Target
+-- Installing: /usr/local/include/llvm/Target/TargetCallingConv.td
+-- Installing: /usr/local/include/llvm/Target/TargetIntrinsicInfo.h
+-- Installing: /usr/local/include/llvm/Target/TargetPfmCounters.td
+-- Installing: /usr/local/include/llvm/Target/TargetSchedule.td
+-- Installing: /usr/local/include/llvm/Target/GenericOpcodes.td
+-- Installing: /usr/local/include/llvm/Target/TargetOptions.h
+-- Installing: /usr/local/include/llvm/Target/TargetSelectionDAG.td
+-- Installing: /usr/local/include/llvm/Target/TargetMachine.h
+-- Installing: /usr/local/include/llvm/Target/TargetItinerary.td
+-- Installing: /usr/local/include/llvm/Target/CodeGenCWrappers.h
+-- Installing: /usr/local/include/llvm/Target/TargetLoweringObjectFile.h
+-- Installing: /usr/local/include/llvm/Target/CGPassBuilderOption.h
+-- Installing: /usr/local/include/llvm/Target/GlobalISel
+-- Installing: /usr/local/include/llvm/Target/GlobalISel/Combine.td
+-- Installing: /usr/local/include/llvm/Target/GlobalISel/RegisterBank.td
+-- Installing: /usr/local/include/llvm/Target/GlobalISel/SelectionDAGCompat.td
+-- Installing: /usr/local/include/llvm/Target/GlobalISel/Target.td
+-- Installing: /usr/local/include/llvm/Target/Target.td
+-- Installing: /usr/local/include/llvm/Target/TargetInstrPredicate.td
+-- Installing: /usr/local/include/llvm/Linker
+-- Installing: /usr/local/include/llvm/Linker/Linker.h
+-- Installing: /usr/local/include/llvm/Linker/IRMover.h
+-- Installing: /usr/local/include/llvm/Bitcode
+-- Installing: /usr/local/include/llvm/Bitcode/BitcodeConvenience.h
+-- Installing: /usr/local/include/llvm/Bitcode/BitcodeWriterPass.h
+-- Installing: /usr/local/include/llvm/Bitcode/BitcodeCommon.h
+-- Installing: /usr/local/include/llvm/Bitcode/BitcodeWriter.h
+-- Installing: /usr/local/include/llvm/Bitcode/LLVMBitCodes.h
+-- Installing: /usr/local/include/llvm/Bitcode/BitcodeReader.h
+-- Installing: /usr/local/include/llvm/Bitcode/BitcodeAnalyzer.h
+-- Installing: /usr/local/include/llvm/LTO
+-- Installing: /usr/local/include/llvm/LTO/legacy
+-- Installing: /usr/local/include/llvm/LTO/legacy/ThinLTOCodeGenerator.h
+-- Installing: /usr/local/include/llvm/LTO/legacy/LTOModule.h
+-- Installing: /usr/local/include/llvm/LTO/legacy/UpdateCompilerUsed.h
+-- Installing: /usr/local/include/llvm/LTO/legacy/LTOCodeGenerator.h
+-- Installing: /usr/local/include/llvm/LTO/SummaryBasedOptimizations.h
+-- Installing: /usr/local/include/llvm/LTO/LTO.h
+-- Installing: /usr/local/include/llvm/LTO/LTOBackend.h
+-- Installing: /usr/local/include/llvm/LTO/Config.h
+-- Installing: /usr/local/include/llvm/FuzzMutate
+-- Installing: /usr/local/include/llvm/FuzzMutate/RandomIRBuilder.h
+-- Installing: /usr/local/include/llvm/FuzzMutate/OpDescriptor.h
+-- Installing: /usr/local/include/llvm/FuzzMutate/Operations.h
+-- Installing: /usr/local/include/llvm/FuzzMutate/FuzzerCLI.h
+-- Installing: /usr/local/include/llvm/FuzzMutate/Random.h
+-- Installing: /usr/local/include/llvm/FuzzMutate/IRMutator.h
+-- Installing: /usr/local/include/llvm/WindowsResource
+-- Installing: /usr/local/include/llvm/WindowsResource/ResourceScriptTokenList.h
+-- Installing: /usr/local/include/llvm/WindowsResource/ResourceScriptToken.h
+-- Installing: /usr/local/include/llvm/WindowsResource/ResourceProcessor.h
+-- Installing: /usr/local/include/llvm/Pass.h
+-- Installing: /usr/local/include/llvm/Debuginfod
+-- Installing: /usr/local/include/llvm/Debuginfod/HTTPServer.h
+-- Installing: /usr/local/include/llvm/Debuginfod/Debuginfod.h
+-- Installing: /usr/local/include/llvm/Debuginfod/DIFetcher.h
+-- Installing: /usr/local/include/llvm/Debuginfod/HTTPClient.h
+-- Installing: /usr/local/include/llvm/InitializePasses.h
+-- Installing: /usr/local/include/llvm/PassInfo.h
+-- Installing: /usr/local/include/llvm/MCA
+-- Installing: /usr/local/include/llvm/MCA/HardwareUnits
+-- Installing: /usr/local/include/llvm/MCA/HardwareUnits/RetireControlUnit.h
+-- Installing: /usr/local/include/llvm/MCA/HardwareUnits/LSUnit.h
+-- Installing: /usr/local/include/llvm/MCA/HardwareUnits/RegisterFile.h
+-- Installing: /usr/local/include/llvm/MCA/HardwareUnits/ResourceManager.h
+-- Installing: /usr/local/include/llvm/MCA/HardwareUnits/HardwareUnit.h
+-- Installing: /usr/local/include/llvm/MCA/HardwareUnits/Scheduler.h
+-- Installing: /usr/local/include/llvm/MCA/Pipeline.h
+-- Installing: /usr/local/include/llvm/MCA/CodeEmitter.h
+-- Installing: /usr/local/include/llvm/MCA/Context.h
+-- Installing: /usr/local/include/llvm/MCA/HWEventListener.h
+-- Installing: /usr/local/include/llvm/MCA/CustomBehaviour.h
+-- Installing: /usr/local/include/llvm/MCA/InstrBuilder.h
+-- Installing: /usr/local/include/llvm/MCA/SourceMgr.h
+-- Installing: /usr/local/include/llvm/MCA/Instruction.h
+-- Installing: /usr/local/include/llvm/MCA/Support.h
+-- Installing: /usr/local/include/llvm/MCA/Stages
+-- Installing: /usr/local/include/llvm/MCA/Stages/InOrderIssueStage.h
+-- Installing: /usr/local/include/llvm/MCA/Stages/MicroOpQueueStage.h
+-- Installing: /usr/local/include/llvm/MCA/Stages/ExecuteStage.h
+-- Installing: /usr/local/include/llvm/MCA/Stages/InstructionTables.h
+-- Installing: /usr/local/include/llvm/MCA/Stages/Stage.h
+-- Installing: /usr/local/include/llvm/MCA/Stages/DispatchStage.h
+-- Installing: /usr/local/include/llvm/MCA/Stages/EntryStage.h
+-- Installing: /usr/local/include/llvm/MCA/Stages/RetireStage.h
+-- Installing: /usr/local/include/llvm/MCA/IncrementalSourceMgr.h
+-- Installing: /usr/local/include/llvm/MCA/View.h
+-- Installing: /usr/local/include/llvm/TextAPI
+-- Installing: /usr/local/include/llvm/TextAPI/Platform.h
+-- Installing: /usr/local/include/llvm/TextAPI/TextAPIReader.h
+-- Installing: /usr/local/include/llvm/TextAPI/InterfaceFile.h
+-- Installing: /usr/local/include/llvm/TextAPI/Symbol.h
+-- Installing: /usr/local/include/llvm/TextAPI/Architecture.h
+-- Installing: /usr/local/include/llvm/TextAPI/Target.h
+-- Installing: /usr/local/include/llvm/TextAPI/ArchitectureSet.h
+-- Installing: /usr/local/include/llvm/TextAPI/PackedVersion.h
+-- Installing: /usr/local/include/llvm/TextAPI/Architecture.def
+-- Installing: /usr/local/include/llvm/TextAPI/TextAPIWriter.h
+-- Installing: /usr/local/include/llvm/DWARFLinker
+-- Installing: /usr/local/include/llvm/DWARFLinker/DWARFLinker.h
+-- Installing: /usr/local/include/llvm/DWARFLinker/DWARFStreamer.h
+-- Installing: /usr/local/include/llvm/DWARFLinker/DWARFLinkerDeclContext.h
+-- Installing: /usr/local/include/llvm/DWARFLinker/DWARFLinkerCompileUnit.h
+-- Installing: /usr/local/include/llvm/Config
+-- Installing: /usr/local/include/llvm/Remarks
+-- Installing: /usr/local/include/llvm/Remarks/RemarkFormat.h
+-- Installing: /usr/local/include/llvm/Remarks/BitstreamRemarkContainer.h
+-- Installing: /usr/local/include/llvm/Remarks/RemarkLinker.h
+-- Installing: /usr/local/include/llvm/Remarks/RemarkStreamer.h
+-- Installing: /usr/local/include/llvm/Remarks/RemarkStringTable.h
+-- Installing: /usr/local/include/llvm/Remarks/RemarkSerializer.h
+-- Installing: /usr/local/include/llvm/Remarks/RemarkParser.h
+-- Installing: /usr/local/include/llvm/Remarks/Remark.h
+-- Installing: /usr/local/include/llvm/Remarks/BitstreamRemarkSerializer.h
+-- Installing: /usr/local/include/llvm/Remarks/BitstreamRemarkParser.h
+-- Installing: /usr/local/include/llvm/Remarks/YAMLRemarkSerializer.h
+-- Installing: /usr/local/include/llvm/Remarks/HotnessThresholdParser.h
+-- Installing: /usr/local/include/llvm/PassAnalysisSupport.h
+-- Installing: /usr/local/include/llvm/LinkAllIR.h
+-- Installing: /usr/local/include/llvm/Bitstream
+-- Installing: /usr/local/include/llvm/Bitstream/BitstreamReader.h
+-- Installing: /usr/local/include/llvm/Bitstream/BitstreamWriter.h
+-- Installing: /usr/local/include/llvm/Bitstream/BitCodes.h
+-- Installing: /usr/local/include/llvm/Bitstream/BitCodeEnums.h
+-- Installing: /usr/local/include/llvm/ToolDrivers
+-- Installing: /usr/local/include/llvm/ToolDrivers/llvm-lib
+-- Installing: /usr/local/include/llvm/ToolDrivers/llvm-lib/LibDriver.h
+-- Installing: /usr/local/include/llvm/ToolDrivers/llvm-dlltool
+-- Installing: /usr/local/include/llvm/ToolDrivers/llvm-dlltool/DlltoolDriver.h
+-- Installing: /usr/local/include/llvm-c
+-- Installing: /usr/local/include/llvm-c/BitReader.h
+-- Installing: /usr/local/include/llvm-c/Object.h
+-- Installing: /usr/local/include/llvm-c/lto.h
+-- Installing: /usr/local/include/llvm-c/Core.h
+-- Installing: /usr/local/include/llvm-c/Linker.h
+-- Installing: /usr/local/include/llvm-c/Transforms
+-- Installing: /usr/local/include/llvm-c/Transforms/IPO.h
+-- Installing: /usr/local/include/llvm-c/Transforms/AggressiveInstCombine.h
+-- Installing: /usr/local/include/llvm-c/Transforms/PassBuilder.h
+-- Installing: /usr/local/include/llvm-c/Transforms/InstCombine.h
+-- Installing: /usr/local/include/llvm-c/Transforms/PassManagerBuilder.h
+-- Installing: /usr/local/include/llvm-c/Transforms/Vectorize.h
+-- Installing: /usr/local/include/llvm-c/Transforms/Utils.h
+-- Installing: /usr/local/include/llvm-c/Transforms/Scalar.h
+-- Installing: /usr/local/include/llvm-c/Initialization.h
+-- Installing: /usr/local/include/llvm-c/OrcEE.h
+-- Installing: /usr/local/include/llvm-c/Types.h
+-- Installing: /usr/local/include/llvm-c/Remarks.h
+-- Installing: /usr/local/include/llvm-c/TargetMachine.h
+-- Installing: /usr/local/include/llvm-c/LLJIT.h
+-- Installing: /usr/local/include/llvm-c/DataTypes.h
+-- Installing: /usr/local/include/llvm-c/ExecutionEngine.h
+-- Installing: /usr/local/include/llvm-c/DisassemblerTypes.h
+-- Installing: /usr/local/include/llvm-c/Analysis.h
+-- Installing: /usr/local/include/llvm-c/Target.h
+-- Installing: /usr/local/include/llvm-c/BitWriter.h
+-- Installing: /usr/local/include/llvm-c/ErrorHandling.h
+-- Installing: /usr/local/include/llvm-c/Support.h
+-- Installing: /usr/local/include/llvm-c/ExternC.h
+-- Installing: /usr/local/include/llvm-c/DebugInfo.h
+-- Installing: /usr/local/include/llvm-c/Disassembler.h
+-- Installing: /usr/local/include/llvm-c/Deprecated.h
+-- Installing: /usr/local/include/llvm-c/IRReader.h
+-- Installing: /usr/local/include/llvm-c/Orc.h
+-- Installing: /usr/local/include/llvm-c/Comdat.h
+-- Installing: /usr/local/include/llvm-c/blake3.h
+-- Installing: /usr/local/include/llvm-c/Error.h
+-- Up-to-date: /usr/local/include/llvm
+-- Up-to-date: /usr/local/include/llvm/IR
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsNVPTX.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsVE.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsHexagon.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicEnums.inc
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsARM.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsSPIRV.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsPowerPC.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsBPF.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsXCore.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsDirectX.h
+-- Installing: /usr/local/include/llvm/IR/Attributes.inc
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsR600.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsRISCV.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsS390.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsMips.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsAArch64.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsWebAssembly.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsAMDGPU.h
+-- Installing: /usr/local/include/llvm/IR/IntrinsicImpl.inc
+-- Installing: /usr/local/include/llvm/IR/IntrinsicsX86.h
+-- Up-to-date: /usr/local/include/llvm/Frontend
+-- Up-to-date: /usr/local/include/llvm/Frontend/OpenMP
+-- Installing: /usr/local/include/llvm/Frontend/OpenMP/OMP.inc
+-- Installing: /usr/local/include/llvm/Frontend/OpenMP/OMP.h.inc
+-- Up-to-date: /usr/local/include/llvm/Frontend/OpenACC
+-- Installing: /usr/local/include/llvm/Frontend/OpenACC/ACC.h.inc
+-- Installing: /usr/local/include/llvm/Frontend/OpenACC/ACC.inc
+-- Up-to-date: /usr/local/include/llvm/Support
+-- Installing: /usr/local/include/llvm/Support/VCSRevision.h
+-- Installing: /usr/local/include/llvm/Support/Extension.def
+-- Up-to-date: /usr/local/include/llvm/Config
+-- Installing: /usr/local/include/llvm/Config/llvm-config.h
+-- Installing: /usr/local/include/llvm/Config/abi-breaking.h
+-- Installing: /usr/local/include/llvm/Config/AsmParsers.def
+-- Installing: /usr/local/include/llvm/Config/TargetMCAs.def
+-- Installing: /usr/local/include/llvm/Config/Targets.def
+-- Installing: /usr/local/include/llvm/Config/AsmPrinters.def
+-- Installing: /usr/local/include/llvm/Config/Disassemblers.def
+-- Installing: /usr/local/lib/cmake/llvm/LLVMConfigExtensions.cmake
+-- Installing: /usr/local/lib/libLLVMDemangle.a
+-- Installing: /usr/local/lib/libLLVMSupport.a
+-- Installing: /usr/local/lib/libLLVMTableGen.a
+-- Installing: /usr/local/bin/llvm-tblgen
+-- Installing: /usr/local/lib/libLLVMTableGenGlobalISel.a
+-- Installing: /usr/local/lib/libLLVMCore.a
+-- Installing: /usr/local/lib/libLLVMFuzzerCLI.a
+-- Installing: /usr/local/lib/libLLVMFuzzMutate.a
+-- Installing: /usr/local/lib/libLLVMFileCheck.a
+-- Installing: /usr/local/lib/libLLVMInterfaceStub.a
+-- Installing: /usr/local/lib/libLLVMIRReader.a
+-- Installing: /usr/local/lib/libLLVMCodeGen.a
+-- Installing: /usr/local/lib/libLLVMSelectionDAG.a
+-- Installing: /usr/local/lib/libLLVMAsmPrinter.a
+-- Installing: /usr/local/lib/libLLVMMIRParser.a
+-- Installing: /usr/local/lib/libLLVMGlobalISel.a
+-- Installing: /usr/local/lib/libLLVMBinaryFormat.a
+-- Installing: /usr/local/lib/libLLVMBitReader.a
+-- Installing: /usr/local/lib/libLLVMBitWriter.a
+-- Installing: /usr/local/lib/libLLVMBitstreamReader.a
+-- Installing: /usr/local/lib/libLLVMDWARFLinker.a
+-- Installing: /usr/local/lib/libLLVMExtensions.a
+-- Installing: /usr/local/lib/libLLVMFrontendOpenACC.a
+-- Installing: /usr/local/lib/libLLVMFrontendOpenMP.a
+-- Installing: /usr/local/lib/libLLVMTransformUtils.a
+-- Installing: /usr/local/lib/libLLVMInstrumentation.a
+-- Installing: /usr/local/lib/libLLVMAggressiveInstCombine.a
+-- Installing: /usr/local/lib/libLLVMInstCombine.a
+-- Installing: /usr/local/lib/libLLVMScalarOpts.a
+-- Installing: /usr/local/lib/libLLVMipo.a
+-- Installing: /usr/local/lib/libLLVMVectorize.a
+-- Installing: /usr/local/lib/libLLVMObjCARCOpts.a
+-- Installing: /usr/local/lib/libLLVMCoroutines.a
+-- Installing: /usr/local/lib/libLLVMCFGuard.a
+-- Installing: /usr/local/lib/libLLVMLinker.a
+-- Installing: /usr/local/lib/libLLVMAnalysis.a
+-- Installing: /usr/local/lib/libLLVMLTO.a
+-- Installing: /usr/local/lib/libLLVMMC.a
+-- Installing: /usr/local/lib/libLLVMMCParser.a
+-- Installing: /usr/local/lib/libLLVMMCDisassembler.a
+-- Installing: /usr/local/lib/libLLVMMCA.a
+-- Installing: /usr/local/lib/libLLVMObjCopy.a
+-- Installing: /usr/local/lib/libLLVMObject.a
+-- Installing: /usr/local/lib/libLLVMObjectYAML.a
+-- Installing: /usr/local/lib/libLLVMOption.a
+-- Installing: /usr/local/lib/libLLVMRemarks.a
+-- Installing: /usr/local/lib/libLLVMDebuginfod.a
+-- Installing: /usr/local/lib/libLLVMDebugInfoDWARF.a
+-- Installing: /usr/local/lib/libLLVMDebugInfoGSYM.a
+-- Installing: /usr/local/lib/libLLVMDebugInfoMSF.a
+-- Installing: /usr/local/lib/libLLVMDebugInfoCodeView.a
+-- Installing: /usr/local/lib/libLLVMDebugInfoPDB.a
+-- Installing: /usr/local/lib/libLLVMSymbolize.a
+-- Installing: /usr/local/lib/libLLVMDWP.a
+-- Installing: /usr/local/lib/libLLVMExecutionEngine.a
+-- Installing: /usr/local/lib/libLLVMInterpreter.a
+-- Installing: /usr/local/lib/libLLVMJITLink.a
+-- Installing: /usr/local/lib/libLLVMMCJIT.a
+-- Installing: /usr/local/lib/libLLVMOrcJIT.a
+-- Installing: /usr/local/lib/libLLVMOrcShared.a
+-- Installing: /usr/local/lib/libLLVMOrcTargetProcess.a
+-- Installing: /usr/local/lib/libLLVMRuntimeDyld.a
+-- Installing: /usr/local/lib/libLLVMTarget.a
+-- Installing: /usr/local/lib/libLLVMAArch64CodeGen.a
+-- Installing: /usr/local/lib/libLLVMAArch64AsmParser.a
+-- Installing: /usr/local/lib/libLLVMAArch64Disassembler.a
+-- Installing: /usr/local/lib/libLLVMAArch64Desc.a
+-- Installing: /usr/local/lib/libLLVMAArch64Info.a
+-- Installing: /usr/local/lib/libLLVMAArch64Utils.a
+-- Installing: /usr/local/lib/libLLVMAMDGPUCodeGen.a
+-- Installing: /usr/local/lib/libLLVMAMDGPUAsmParser.a
+-- Installing: /usr/local/lib/libLLVMAMDGPUDisassembler.a
+-- Installing: /usr/local/lib/libLLVMAMDGPUTargetMCA.a
+-- Installing: /usr/local/lib/libLLVMAMDGPUDesc.a
+-- Installing: /usr/local/lib/libLLVMAMDGPUInfo.a
+-- Installing: /usr/local/lib/libLLVMAMDGPUUtils.a
+-- Installing: /usr/local/lib/libLLVMARMCodeGen.a
+-- Installing: /usr/local/lib/libLLVMARMAsmParser.a
+-- Installing: /usr/local/lib/libLLVMARMDisassembler.a
+-- Installing: /usr/local/lib/libLLVMARMDesc.a
+-- Installing: /usr/local/lib/libLLVMARMInfo.a
+-- Installing: /usr/local/lib/libLLVMARMUtils.a
+-- Installing: /usr/local/lib/libLLVMAVRCodeGen.a
+-- Installing: /usr/local/lib/libLLVMAVRAsmParser.a
+-- Installing: /usr/local/lib/libLLVMAVRDisassembler.a
+-- Installing: /usr/local/lib/libLLVMAVRDesc.a
+-- Installing: /usr/local/lib/libLLVMAVRInfo.a
+-- Installing: /usr/local/lib/libLLVMBPFCodeGen.a
+-- Installing: /usr/local/lib/libLLVMBPFAsmParser.a
+-- Installing: /usr/local/lib/libLLVMBPFDisassembler.a
+-- Installing: /usr/local/lib/libLLVMBPFDesc.a
+-- Installing: /usr/local/lib/libLLVMBPFInfo.a
+-- Installing: /usr/local/lib/libLLVMHexagonCodeGen.a
+-- Installing: /usr/local/lib/libLLVMHexagonAsmParser.a
+-- Installing: /usr/local/lib/libLLVMHexagonDisassembler.a
+-- Installing: /usr/local/lib/libLLVMHexagonDesc.a
+-- Installing: /usr/local/lib/libLLVMHexagonInfo.a
+-- Installing: /usr/local/lib/libLLVMLanaiCodeGen.a
+-- Installing: /usr/local/lib/libLLVMLanaiAsmParser.a
+-- Installing: /usr/local/lib/libLLVMLanaiDisassembler.a
+-- Installing: /usr/local/lib/libLLVMLanaiDesc.a
+-- Installing: /usr/local/lib/libLLVMLanaiInfo.a
+-- Installing: /usr/local/lib/libLLVMMipsCodeGen.a
+-- Installing: /usr/local/lib/libLLVMMipsAsmParser.a
+-- Installing: /usr/local/lib/libLLVMMipsDisassembler.a
+-- Installing: /usr/local/lib/libLLVMMipsDesc.a
+-- Installing: /usr/local/lib/libLLVMMipsInfo.a
+-- Installing: /usr/local/lib/libLLVMMSP430CodeGen.a
+-- Installing: /usr/local/lib/libLLVMMSP430Desc.a
+-- Installing: /usr/local/lib/libLLVMMSP430Info.a
+-- Installing: /usr/local/lib/libLLVMMSP430AsmParser.a
+-- Installing: /usr/local/lib/libLLVMMSP430Disassembler.a
+-- Installing: /usr/local/lib/libLLVMNVPTXCodeGen.a
+-- Installing: /usr/local/lib/libLLVMNVPTXDesc.a
+-- Installing: /usr/local/lib/libLLVMNVPTXInfo.a
+-- Installing: /usr/local/lib/libLLVMPowerPCCodeGen.a
+-- Installing: /usr/local/lib/libLLVMPowerPCAsmParser.a
+-- Installing: /usr/local/lib/libLLVMPowerPCDisassembler.a
+-- Installing: /usr/local/lib/libLLVMPowerPCDesc.a
+-- Installing: /usr/local/lib/libLLVMPowerPCInfo.a
+-- Installing: /usr/local/lib/libLLVMRISCVCodeGen.a
+-- Installing: /usr/local/lib/libLLVMRISCVAsmParser.a
+-- Installing: /usr/local/lib/libLLVMRISCVDisassembler.a
+-- Installing: /usr/local/lib/libLLVMRISCVDesc.a
+-- Installing: /usr/local/lib/libLLVMRISCVInfo.a
+-- Installing: /usr/local/lib/libLLVMSparcCodeGen.a
+-- Installing: /usr/local/lib/libLLVMSparcAsmParser.a
+-- Installing: /usr/local/lib/libLLVMSparcDisassembler.a
+-- Installing: /usr/local/lib/libLLVMSparcDesc.a
+-- Installing: /usr/local/lib/libLLVMSparcInfo.a
+-- Installing: /usr/local/lib/libLLVMSystemZCodeGen.a
+-- Installing: /usr/local/lib/libLLVMSystemZAsmParser.a
+-- Installing: /usr/local/lib/libLLVMSystemZDisassembler.a
+-- Installing: /usr/local/lib/libLLVMSystemZDesc.a
+-- Installing: /usr/local/lib/libLLVMSystemZInfo.a
+-- Installing: /usr/local/lib/libLLVMVECodeGen.a
+-- Installing: /usr/local/lib/libLLVMVEAsmParser.a
+-- Installing: /usr/local/lib/libLLVMVEDisassembler.a
+-- Installing: /usr/local/lib/libLLVMVEInfo.a
+-- Installing: /usr/local/lib/libLLVMVEDesc.a
+-- Installing: /usr/local/lib/libLLVMWebAssemblyCodeGen.a
+-- Installing: /usr/local/lib/libLLVMWebAssemblyAsmParser.a
+-- Installing: /usr/local/lib/libLLVMWebAssemblyDisassembler.a
+-- Installing: /usr/local/lib/libLLVMWebAssemblyDesc.a
+-- Installing: /usr/local/lib/libLLVMWebAssemblyInfo.a
+-- Installing: /usr/local/lib/libLLVMWebAssemblyUtils.a
+-- Installing: /usr/local/lib/libLLVMX86CodeGen.a
+-- Installing: /usr/local/lib/libLLVMX86AsmParser.a
+-- Installing: /usr/local/lib/libLLVMX86Disassembler.a
+-- Installing: /usr/local/lib/libLLVMX86TargetMCA.a
+-- Installing: /usr/local/lib/libLLVMX86Desc.a
+-- Installing: /usr/local/lib/libLLVMX86Info.a
+-- Installing: /usr/local/lib/libLLVMXCoreCodeGen.a
+-- Installing: /usr/local/lib/libLLVMXCoreDisassembler.a
+-- Installing: /usr/local/lib/libLLVMXCoreDesc.a
+-- Installing: /usr/local/lib/libLLVMXCoreInfo.a
+-- Installing: /usr/local/lib/libLLVMAsmParser.a
+-- Installing: /usr/local/lib/libLLVMLineEditor.a
+-- Installing: /usr/local/lib/libLLVMProfileData.a
+-- Installing: /usr/local/lib/libLLVMCoverage.a
+-- Installing: /usr/local/lib/libLLVMPasses.a
+-- Installing: /usr/local/lib/libLLVMTextAPI.a
+-- Installing: /usr/local/lib/libLLVMDlltoolDriver.a
+-- Installing: /usr/local/lib/libLLVMLibDriver.a
+-- Installing: /usr/local/lib/libLLVMXRay.a
+-- Installing: /usr/local/lib/libLLVMWindowsDriver.a
+-- Installing: /usr/local/lib/libLLVMWindowsManifest.a
+-- Installing: /usr/local/lib/libLTO.so.15
+-- Installing: /usr/local/lib/libLTO.so
+-- Up-to-date: /usr/local/include/llvm-c/lto.h
+-- Installing: /usr/local/bin/llvm-ar
+CMake Warning (dev) at /usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake:239 (message):
+  Unable to determine default CMAKE_INSTALL_LIBDIR directory because no
+  target architecture is known.  Please enable at least one language before
+  including GNUInstallDirs.
+Call Stack (most recent call first):
+  /home/jesse/workspace/llvm-project/llvm/cmake/modules/LLVMInstallSymlink.cmake:5 (include)
+  tools/llvm-ar/cmake_install.cmake:56 (include)
+  tools/cmake_install.cmake:49 (include)
+  cmake_install.cmake:78 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Creating llvm-ranlib
+-- Creating llvm-lib
+-- Creating llvm-dlltool
+-- Installing: /usr/local/bin/llvm-config
+-- Installing: /usr/local/bin/llvm-lto
+-- Installing: /usr/local/bin/llvm-profdata
+-- Installing: /usr/local/bin/bugpoint
+-- Installing: /usr/local/bin/dsymutil
+-- Installing: /usr/local/bin/llc
+-- Installing: /usr/local/bin/lli
+-- Installing: /usr/local/bin/llvm-as
+-- Installing: /usr/local/bin/llvm-bcanalyzer
+-- Installing: /usr/local/bin/llvm-c-test
+-- Installing: /usr/local/bin/llvm-cat
+-- Installing: /usr/local/bin/llvm-cfi-verify
+-- Installing: /usr/local/lib/libLLVMCFIVerify.a
+-- Installing: /usr/local/bin/llvm-cov
+-- Installing: /usr/local/bin/llvm-cvtres
+-- Installing: /usr/local/bin/llvm-cxxdump
+-- Installing: /usr/local/bin/llvm-cxxfilt
+-- Installing: /usr/local/bin/llvm-cxxmap
+-- Installing: /usr/local/bin/llvm-debuginfod
+-- Installing: /usr/local/bin/llvm-debuginfod-find
+-- Installing: /usr/local/bin/llvm-diff
+-- Installing: /usr/local/lib/libLLVMDiff.a
+-- Installing: /usr/local/bin/llvm-dis
+-- Installing: /usr/local/bin/llvm-dwarfdump
+-- Installing: /usr/local/bin/llvm-dwarfutil
+-- Installing: /usr/local/bin/llvm-dwp
+-- Installing: /usr/local/bin/llvm-exegesis
+-- Installing: /usr/local/lib/libLLVMExegesis.a
+-- Installing: /usr/local/lib/libLLVMExegesisX86.a
+-- Installing: /usr/local/lib/libLLVMExegesisAArch64.a
+-- Installing: /usr/local/lib/libLLVMExegesisPowerPC.a
+-- Installing: /usr/local/lib/libLLVMExegesisMips.a
+-- Installing: /usr/local/bin/llvm-extract
+-- Installing: /usr/local/bin/llvm-gsymutil
+-- Installing: /usr/local/bin/llvm-ifs
+-- Installing: /usr/local/bin/llvm-jitlink
+-- Installing: /usr/local/bin/llvm-libtool-darwin
+-- Installing: /usr/local/bin/llvm-link
+-- Installing: /usr/local/bin/llvm-lipo
+-- Installing: /usr/local/bin/llvm-lto2
+-- Installing: /usr/local/bin/llvm-mc
+-- Installing: /usr/local/bin/llvm-mca
+-- Installing: /usr/local/bin/llvm-ml
+-- Installing: /usr/local/bin/llvm-modextract
+-- Installing: /usr/local/bin/llvm-mt
+-- Installing: /usr/local/bin/llvm-nm
+-- Installing: /usr/local/bin/llvm-objcopy
+-- Creating llvm-install-name-tool
+-- Creating llvm-bitcode-strip
+-- Creating llvm-strip
+-- Installing: /usr/local/bin/llvm-objdump
+-- Creating llvm-otool
+-- Installing: /usr/local/bin/llvm-opt-report
+-- Installing: /usr/local/bin/llvm-pdbutil
+-- Installing: /usr/local/bin/llvm-profgen
+-- Installing: /usr/local/bin/llvm-rc
+-- Creating llvm-windres
+-- Installing: /usr/local/bin/llvm-readobj
+-- Creating llvm-readelf
+-- Installing: /usr/local/bin/llvm-reduce
+-- Installing: /usr/local/bin/llvm-remark-size-diff
+-- Installing: /usr/local/bin/llvm-rtdyld
+-- Installing: /usr/local/bin/llvm-sim
+-- Installing: /usr/local/bin/llvm-size
+-- Installing: /usr/local/bin/llvm-split
+-- Installing: /usr/local/bin/llvm-stress
+-- Installing: /usr/local/bin/llvm-strings
+-- Installing: /usr/local/bin/llvm-symbolizer
+-- Creating llvm-addr2line
+-- Installing: /usr/local/bin/llvm-tapi-diff
+-- Installing: /usr/local/bin/llvm-tli-checker
+-- Installing: /usr/local/bin/llvm-undname
+-- Installing: /usr/local/bin/llvm-xray
+-- Installing: /usr/local/bin/opt
+-- Installing: /usr/local/share/opt-viewer/opt-diff.py
+-- Installing: /usr/local/share/opt-viewer/opt-stats.py
+-- Installing: /usr/local/share/opt-viewer/opt-viewer.py
+-- Installing: /usr/local/share/opt-viewer/optpmap.py
+-- Installing: /usr/local/share/opt-viewer/optrecord.py
+-- Installing: /usr/local/share/opt-viewer/style.css
+-- Installing: /usr/local/lib/libRemarks.so.15
+-- Installing: /usr/local/lib/libRemarks.so
+-- Up-to-date: /usr/local/include/llvm-c/Remarks.h
+-- Installing: /usr/local/bin/sancov
+-- Installing: /usr/local/bin/sanstats
+-- Installing: /usr/local/bin/split-file
+-- Installing: /usr/local/bin/verify-uselistorder
+-- Installing: /usr/local/lib/cmake/llvm/LLVMExports.cmake
+-- Installing: /usr/local/lib/cmake/llvm/LLVMExports-release.cmake
+-- Installing: /usr/local/lib/cmake/llvm/LLVMConfig.cmake
+-- Installing: /usr/local/lib/cmake/llvm/LLVMConfigVersion.cmake
+-- Installing: /usr/local/lib/cmake/llvm/LLVM-Config.cmake
+-- Up-to-date: /usr/local/lib/cmake/llvm/.
+-- Installing: /usr/local/lib/cmake/llvm/./LLVM-Build.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./LLVMProcessSources.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./LLVMExternalProjectUtils.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./UseLibtool.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./GenerateVersionFromVCS.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./GetLibraryName.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./LLVMCheckLinkerFlag.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./FindSphinx.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./DetermineGCCCompatible.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./GetErrcMessages.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./LLVMInstallSymlink.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./ChooseMSVCCRT.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./TableGen.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./TensorFlowCompile.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./FindOCaml.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./FindLibpfm.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./AddLLVMDefinitions.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./LLVMDistributionSupport.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./CrossCompile.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./CheckCompilerVersion.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./CheckProblematicConfigurations.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./FindFFI.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./CoverageReport.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./VersionFromVCS.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./FindZ3.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./CheckAtomic.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./HandleLLVMStdlib.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./AddSphinxTarget.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./FindGRPC.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./llvm-driver-template.cpp.in
+-- Installing: /usr/local/lib/cmake/llvm/./AddLLVM.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./FindTerminfo.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./HandleLLVMOptions.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./Findzstd.cmake
+-- Installing: /usr/local/lib/cmake/llvm/./AddOCaml.cmake

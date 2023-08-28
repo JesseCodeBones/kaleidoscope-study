@@ -3,22 +3,21 @@ project(kaleidoscope-study VERSION 0.1.0 LANGUAGES C CXX)
 set(LLVM_REQUIRED_CXX_STANDARD 17)
 include(CTest)
 enable_testing()
-
-set(LLVM_DIR "/home/jesse/workspace/llvm-project/llvm/build")
+set(LLVM_DIR /usr/local/lib/cmake/llvm/)
 find_package(LLVM REQUIRED CONFIG)
-
-# 获取目标列表
-get_target_property(target_list LLVM INTERFACE_LINK_LIBRARIES)
-
-# 输出目标列表
-message("Targets of ExamplePackage:")
-foreach(target IN LISTS target_list)
-    message("  ${target}")
-endforeach()
+message(STATUS "Found LLVM ${LLVM_PACKAGE_VERSION}")
+message(STATUS "Using LLVMConfig.cmake in: ${LLVM_DIR}")
 
 aux_source_directory(src sources)
 add_executable(kaleidoscope-study ${sources})
-target_link_libraries(kaleidoscope-study)
+
+llvm_map_components_to_libnames(llvm_libs Core
+ExecutionEngine
+Object
+OrcJIT
+Support
+native)
+target_link_libraries(kaleidoscope-study ${llvm_libs})
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
