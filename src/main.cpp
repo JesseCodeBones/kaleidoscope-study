@@ -7,11 +7,15 @@
 #include <functional>
 #include <iostream>
 #include <iterator>
+#include <llvm/IR/Module.h>
+#include <llvm/Transforms/InstCombine/InstCombine.h>
 #include <llvm/Support/raw_ostream.h>
+#include <llvm/Transforms/Scalar.h>
 #include <memory>
 #include <stdexcept>
 #include <string>
 #include <vector>
+#include <llvm/IR/LegacyPassManager.h>
 
 extern double numbValue;
 
@@ -55,7 +59,8 @@ parsePrototype(std::function<char()> getchar) {
     throw new std::runtime_error("Expected ')' in prototype");
   }
   getNextToken(getchar);
-  return std::make_unique<PrototypeAST>(std::move(functionName), std::move(argNames));
+  return std::make_unique<PrototypeAST>(std::move(functionName),
+                                        std::move(argNames));
 }
 
 static std::unique_ptr<ExpressAST>
@@ -82,7 +87,8 @@ static std::unique_ptr<FunctionAST>
 parseToplevelAST(std::function<char()> getchar) {
 
   if (auto expression = parseExpression(getchar)) {
-    auto Proto = std::make_unique<PrototypeAST>("main", std::vector<std::string>());
+    auto Proto =
+        std::make_unique<PrototypeAST>("main", std::vector<std::string>());
     return std::make_unique<FunctionAST>(std::move(Proto),
                                          std::move(expression));
   }
@@ -116,7 +122,7 @@ static void driver(std::function<char()> getchar) {
       auto function = parseToplevelAST(getchar);
       function->codegen();
       TheModule.print(llvm::errs(), nullptr);
-      if(function) {
+      if (function) {
         function->getText();
       }
       break;
@@ -306,7 +312,7 @@ int precedenceParse() {
 
 int driverParse() {
   std::stringstream contentStream;
-  contentStream << "def fib(x) x + 10 ; fib(42);\n";
+  contentStream << "def fib(x) 2 * x + 10 + 5 ; fib(42);\n";
   contentStream << static_cast<char>(EOF);
   std::string str = contentStream.str();
   int pos = 0;
@@ -323,7 +329,20 @@ int driverParse() {
   };
   getNextToken(getchar);
   driver(getchar);
+  
   return 0;
 }
-
-int main(int, char **) { return driverParse(); }
+#include <llvm/Support/TargetSelect.h>
+#include <llvm/Support/FileUtilities.h>
+#include <llvm/Bitcode/BitcodeWriter.h>
+int main(int, char **) {
+  driverParse();
+  llvm::InitializeNativeTarget();
+  llvm::InitializeNativeTargetAsmPrinter();
+  llvm::InitializeNativeTargetAsmParser();
+  std::error_code EC;
+  llvm::raw_fd_ostream ostream("executable", EC, llvm::sys::fs::OF_None);
+  llvm::WriteBitcodeToFile(TheModule, ostream);
+  ostream.flush();
+  return 0;
+}

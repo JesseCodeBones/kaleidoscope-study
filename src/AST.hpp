@@ -1,6 +1,7 @@
 #ifndef __jesse_ast__
 #define __jesse_ast__
 
+#include <iostream>
 #include <llvm/ADT/APFloat.h>
 #include <llvm/IR/BasicBlock.h>
 #include <llvm/IR/DerivedTypes.h>
@@ -12,13 +13,16 @@
 #include <stdexcept>
 #include <string>
 #include <vector>
-#include <iostream>
 
 #include <llvm/IR/Constants.h>
 #include <llvm/IR/IRBuilder.h>
 #include <llvm/IR/LLVMContext.h>
+#include <llvm/IR/LegacyPassManager.h>
 #include <llvm/IR/Module.h>
 #include <llvm/IR/Value.h>
+#include <llvm/Support/raw_ostream.h>
+#include <llvm/Transforms/InstCombine/InstCombine.h>
+#include <llvm/Transforms/Scalar.h>
 
 static llvm::LLVMContext TheContext;
 static llvm::IRBuilder<> Builder(TheContext);
@@ -144,7 +148,7 @@ class PrototypeAST {
 public:
   PrototypeAST(const std::string &name, std::vector<std::string> Args)
       : Name(name), Args(std::move(Args)) {}
-  std::string& getName() { return Name; }
+  std::string &getName() { return Name; }
   std::string getText() {
     return "{\"type\":\"Prototype\", \"Name\": \"" + Name +
            "\", \"argsSize\":" + std::to_string(Args.size()) + "}";
@@ -158,7 +162,7 @@ public:
     llvm::Function *func = llvm::Function::Create(
         functionType, llvm::Function::ExternalLinkage, Name, TheModule);
     int index = 0;
-    for (auto& arg: func->args()) {
+    for (auto &arg : func->args()) {
       arg.setName(Args[index++]);
     }
     return func;
@@ -169,11 +173,18 @@ public:
 class FunctionAST {
   std::unique_ptr<PrototypeAST> Proto;
   std::unique_ptr<ExpressAST> Body;
+  llvm::legacy::FunctionPassManager manager;
 
 public:
   FunctionAST(std::unique_ptr<PrototypeAST> Proto,
               std::unique_ptr<ExpressAST> Body)
-      : Proto(std::move(Proto)), Body(std::move(Body)) {}
+      : Proto(std::move(Proto)), Body(std::move(Body)), manager(&TheModule) {
+    manager.add(llvm::createInstructionCombiningPass());
+    manager.add(llvm::createReassociatePass());
+    manager.add(llvm::createGVNSinkPass());
+    manager.add(llvm::createCFGSimplificationPass());
+    manager.doInitialization();
+  }
   std::string getText() {
     return "{\"type\":\"Function\", \"proto\": " + Proto->getText() +
            ", \"body\":" + Body->getText() + "}";
@@ -194,13 +205,14 @@ public:
         llvm::BasicBlock::Create(TheContext, "entry", func);
     Builder.SetInsertPoint(basicBlock);
     NamedValues.clear();
-    for (auto& arg : func->args()) {
+    for (auto &arg : func->args()) {
       NamedValues[std::string(arg.getName())] = &arg;
     }
-    if(llvm::Value* ret = Body->codegen()) {
+    if (llvm::Value *ret = Body->codegen()) {
       Builder.CreateRet(ret);
       bool result = llvm::verifyFunction(*func);
       std::cout << "verify result: " << result << std::endl;
+      manager.run(*func);
       return func;
     }
     func->eraseFromParent();
