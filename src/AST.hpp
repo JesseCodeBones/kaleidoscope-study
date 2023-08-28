@@ -157,8 +157,15 @@ public:
   virtual llvm::Function *codegen() {
     std::vector<llvm::Type *> doubles(Args.size(),
                                       llvm::Type::getDoubleTy(TheContext));
-    llvm::FunctionType *functionType = llvm::FunctionType::get(
-        llvm::Type::getDoubleTy(TheContext), doubles, false);
+    llvm::FunctionType *functionType = nullptr;
+    if (Name == "main") {
+      // change main function type from double to int
+      functionType = llvm::FunctionType::get(llvm::Type::getInt32Ty(TheContext),
+                                             doubles, false);
+    } else {
+      functionType = llvm::FunctionType::get(
+          llvm::Type::getDoubleTy(TheContext), doubles, false);
+    }
     llvm::Function *func = llvm::Function::Create(
         functionType, llvm::Function::ExternalLinkage, Name, TheModule);
     int index = 0;
@@ -209,6 +216,10 @@ public:
       NamedValues[std::string(arg.getName())] = &arg;
     }
     if (llvm::Value *ret = Body->codegen()) {
+      if (Proto->getName() == "main") {
+        // main function will return int value
+        ret = Builder.CreateFPToSI(ret, llvm::Type::getInt32Ty(TheContext));
+      }
       Builder.CreateRet(ret);
       bool result = llvm::verifyFunction(*func);
       std::cout << "verify result: " << result << std::endl;
