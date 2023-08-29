@@ -77,13 +77,14 @@ public:
 
     auto Triple = ES->getExecutorProcessControl().getTargetTriple();
     std::cout << Triple.str() << std::endl;
-    auto MyTriple = llvm::Triple("x86_64-unknown-linux-gnu");
-    LLVMInitializeX86TargetInfo();
-    LLVMInitializeX86Target();
-    LLVMInitializeX86TargetMC();
+    LLVMInitializeAllTargetInfos();
+    LLVMInitializeAllTargets();
+    LLVMInitializeAllTargetMCs();
+    LLVMInitializeAllAsmPrinters();
+    LLVMInitializeAllAsmParsers();
     // TargetRegistry::RegisterTarget(llvm::get);
 
-    JITTargetMachineBuilder JTMB(MyTriple);
+    JITTargetMachineBuilder JTMB(Triple);
     std::string ErrMsg;
     auto *TheTarget = TargetRegistry::lookupTarget("x86_64-unknown-linux-gnu", ErrMsg);
 
