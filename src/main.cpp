@@ -1,3 +1,4 @@
+#include "./KaleidoscopeJIT.hpp"
 #include "AST.hpp"
 #include "Precedence.hpp"
 #include "Token.hpp"
@@ -7,15 +8,20 @@
 #include <functional>
 #include <iostream>
 #include <iterator>
+#include <llvm/Bitcode/BitcodeWriter.h>
+#include <llvm/ExecutionEngine/Orc/ThreadSafeModule.h>
+#include <llvm/IR/LLVMContext.h>
+#include <llvm/IR/LegacyPassManager.h>
 #include <llvm/IR/Module.h>
-#include <llvm/Transforms/InstCombine/InstCombine.h>
+#include <llvm/Support/FileUtilities.h>
+#include <llvm/Support/TargetSelect.h>
 #include <llvm/Support/raw_ostream.h>
+#include <llvm/Transforms/InstCombine/InstCombine.h>
 #include <llvm/Transforms/Scalar.h>
 #include <memory>
 #include <stdexcept>
 #include <string>
 #include <vector>
-#include <llvm/IR/LegacyPassManager.h>
 
 extern double numbValue;
 
@@ -26,6 +32,7 @@ static int getNextToken(std::function<char()> getchar) {
 }
 
 static PrecedenceParser precedenceParser;
+static std::unique_ptr<llvm::orc::KaleidoscopeJIT> TheJIT;
 
 static int getTokenPrecedence() {
   return precedenceParser.getOpPrecedence(static_cast<char>(currentToken));
@@ -329,20 +336,38 @@ int driverParse() {
   };
   getNextToken(getchar);
   driver(getchar);
-  
+
   return 0;
 }
-#include <llvm/Support/TargetSelect.h>
-#include <llvm/Support/FileUtilities.h>
-#include <llvm/Bitcode/BitcodeWriter.h>
+
+static llvm::ExitOnError ExitOnErr;
+
+#include <llvm/ExecutionEngine/JITSymbol.h>
 int main(int, char **) {
+  TheJIT = ExitOnErr(llvm::orc::KaleidoscopeJIT::Create());
+  TheModule.setDataLayout(TheJIT->getDataLayout());
   driverParse();
-  llvm::InitializeNativeTarget();
-  llvm::InitializeNativeTargetAsmPrinter();
-  llvm::InitializeNativeTargetAsmParser();
-  std::error_code EC;
-  llvm::raw_fd_ostream ostream("executable", EC, llvm::sys::fs::OF_None);
-  llvm::WriteBitcodeToFile(TheModule, ostream);
-  ostream.flush();
+  auto resourceTracker = TheJIT->getMainJITDylib().createResourceTracker();
+  TheJIT->addModule(llvm::orc::ThreadSafeModule(
+      std::unique_ptr<llvm::Module>(&TheModule),
+      std::unique_ptr<llvm::LLVMContext>(&TheContext)),
+      resourceTracker);
+  auto mainSym = TheJIT->lookup("main");
+  // int (*callable)() = mainSym.get().getAddress()
+  // llvm::jitTargetAddressToPointer()
+  // llvm::ji
+  auto mainPtr = mainSym.get().getAddress();
+  auto jitFunc = llvm::jitTargetAddressToFunction<int(*)()>(mainPtr);
+  int returnVal = jitFunc();
+  std::cout << returnVal << std::endl;
+  
+
+  // llvm::InitializeNativeTarget();
+  // llvm::InitializeNativeTargetAsmPrinter();
+  // llvm::InitializeNativeTargetAsmParser();
+  // std::error_code EC;
+  // llvm::raw_fd_ostream ostream("executable", EC, llvm::sys::fs::OF_None);
+  // llvm::WriteBitcodeToFile(TheModule, ostream);
+  // ostream.flush();
   return 0;
 }

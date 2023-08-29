@@ -129,3 +129,26 @@ virtual llvm::Function *codegen() {
     return nullptr;
   }
 ```
+
+## 结果
+`def fib(x) 2 * x + 10 + 5 ; fib(42);\n`的执行结果：  
+
+```ll
+; ModuleID = 'my module'
+source_filename = "my module"
+
+define double @fib(double %x) {
+entry:
+  %0 = fmul double %x, 2.000000e+00
+  %1 = fadd double %0, 1.000000e+01
+  %2 = fadd double %1, 5.000000e+00
+  ret double %2
+}
+
+define i32 @main() {
+entry:
+  %callTemp = call double @fib(double 4.200000e+01)
+  %0 = fptosi double %callTemp to i32
+  ret i32 %0
+}
+```
