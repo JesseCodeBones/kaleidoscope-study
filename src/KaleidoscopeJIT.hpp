@@ -25,8 +25,10 @@
 #include "llvm/ExecutionEngine/SectionMemoryManager.h"
 #include "llvm/IR/DataLayout.h"
 #include "llvm/IR/LLVMContext.h"
-#include <memory>
+#include "llvm/MC/TargetRegistry.h"
 #include <iostream>
+#include <llvm-c/Target.h>
+#include <memory>
 
 namespace llvm {
 namespace orc {
@@ -74,10 +76,16 @@ public:
     auto ES = std::make_unique<ExecutionSession>(std::move(*EPC));
 
     auto Triple = ES->getExecutorProcessControl().getTargetTriple();
-    std::cout<<Triple.str()<<std::endl;
-    auto MyTriple = llvm::Triple("x86-UnknownVendor-linux");
+    std::cout << Triple.str() << std::endl;
+    auto MyTriple = llvm::Triple("x86_64-unknown-linux-gnu");
+    LLVMInitializeX86TargetInfo();
+    LLVMInitializeX86Target();
+    LLVMInitializeX86TargetMC();
+    // TargetRegistry::RegisterTarget(llvm::get);
 
     JITTargetMachineBuilder JTMB(MyTriple);
+    std::string ErrMsg;
+    auto *TheTarget = TargetRegistry::lookupTarget("x86_64-unknown-linux-gnu", ErrMsg);
 
     auto DL = JTMB.getDefaultDataLayoutForTarget();
     if (!DL)

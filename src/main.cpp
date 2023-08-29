@@ -128,7 +128,7 @@ static void driver(std::function<char()> getchar) {
     default: {
       auto function = parseToplevelAST(getchar);
       function->codegen();
-      TheModule.print(llvm::errs(), nullptr);
+      // TheModule.print(llvm::errs(), nullptr);
       if (function) {
         function->getText();
       }
