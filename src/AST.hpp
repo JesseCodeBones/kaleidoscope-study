@@ -24,9 +24,9 @@
 #include <llvm/Transforms/InstCombine/InstCombine.h>
 #include <llvm/Transforms/Scalar.h>
 
-static llvm::LLVMContext TheContext;
-static llvm::IRBuilder<> Builder(TheContext);
-static llvm::Module TheModule("my module", TheContext);
+static std::unique_ptr<llvm::LLVMContext> TheContext;
+static std::unique_ptr<llvm::Module> TheModule;
+static std::unique_ptr<llvm::IRBuilder<>> Builder;
 static std::map<std::string, llvm::Value *> NamedValues;
 
 class ExpressAST {
@@ -46,7 +46,7 @@ public:
            std::to_string(value) + "}";
   }
   virtual llvm::Value *codegen() override {
-    return llvm::ConstantFP::get(TheContext, llvm::APFloat(value));
+    return llvm::ConstantFP::get(*TheContext, llvm::APFloat(value));
   }
 };
 
@@ -89,20 +89,20 @@ public:
     }
     switch (Op) {
     case '+': {
-      return Builder.CreateFAdd(L, R);
+      return Builder->CreateFAdd(L, R);
     }
     case '-': {
-      return Builder.CreateFSub(L, R);
+      return Builder->CreateFSub(L, R);
     }
     case '*': {
-      return Builder.CreateFMul(L, R);
+      return Builder->CreateFMul(L, R);
     }
     case '/': {
-      return Builder.CreateFDiv(L, R);
+      return Builder->CreateFDiv(L, R);
     }
     case '<': {
-      L = Builder.CreateFCmpULT(L, R);
-      return Builder.CreateUIToFP(L, llvm::Type::getFloatTy(TheContext),
+      L = Builder->CreateFCmpULT(L, R);
+      return Builder->CreateUIToFP(L, llvm::Type::getFloatTy(*TheContext),
                                   "boolTemp");
     }
     default: {
@@ -125,7 +125,7 @@ public:
            ", \"argsSize\":" + std::to_string(Args.size()) + "}";
   }
   virtual llvm::Value *codegen() override {
-    llvm::Function *calleeFunction = TheModule.getFunction(Callee);
+    llvm::Function *calleeFunction = TheModule->getFunction(Callee);
     if (!calleeFunction) {
       throw std::runtime_error("cannot find callee");
     }
@@ -136,7 +136,7 @@ public:
     for (auto &arg : Args) {
       argsV.push_back(arg->codegen());
     }
-    return Builder.CreateCall(calleeFunction, argsV, "callTemp");
+    return Builder->CreateCall(calleeFunction, argsV, "callTemp");
   }
 };
 
@@ -156,18 +156,13 @@ public:
 
   virtual llvm::Function *codegen() {
     std::vector<llvm::Type *> doubles(Args.size(),
-                                      llvm::Type::getDoubleTy(TheContext));
+                                      llvm::Type::getDoubleTy(*TheContext));
     llvm::FunctionType *functionType = nullptr;
-    if (Name == "main") {
-      // change main function type from double to int
-      functionType = llvm::FunctionType::get(llvm::Type::getInt32Ty(TheContext),
-                                             doubles, false);
-    } else {
-      functionType = llvm::FunctionType::get(
-          llvm::Type::getDoubleTy(TheContext), doubles, false);
-    }
+
+    functionType = llvm::FunctionType::get(llvm::Type::getDoubleTy(*TheContext),
+                                           doubles, false);
     llvm::Function *func = llvm::Function::Create(
-        functionType, llvm::Function::ExternalLinkage, Name, TheModule);
+        functionType, llvm::Function::ExternalLinkage, Name, *TheModule);
     int index = 0;
     for (auto &arg : func->args()) {
       arg.setName(Args[index++]);
@@ -185,7 +180,7 @@ class FunctionAST {
 public:
   FunctionAST(std::unique_ptr<PrototypeAST> Proto,
               std::unique_ptr<ExpressAST> Body)
-      : Proto(std::move(Proto)), Body(std::move(Body)), manager(&TheModule) {
+      : Proto(std::move(Proto)), Body(std::move(Body)), manager(TheModule.get()) {
     manager.add(llvm::createInstructionCombiningPass());
     manager.add(llvm::createReassociatePass());
     manager.add(llvm::createGVNSinkPass());
@@ -197,7 +192,7 @@ public:
            ", \"body\":" + Body->getText() + "}";
   }
   virtual llvm::Function *codegen() {
-    llvm::Function *func = TheModule.getFunction(Proto->getName());
+    llvm::Function *func = TheModule->getFunction(Proto->getName());
     if (!func) {
       func = Proto->codegen();
     }
@@ -209,18 +204,14 @@ public:
       throw std::runtime_error("redefine function");
     }
     llvm::BasicBlock *basicBlock =
-        llvm::BasicBlock::Create(TheContext, "entry", func);
-    Builder.SetInsertPoint(basicBlock);
+        llvm::BasicBlock::Create(*TheContext, "entry", func);
+    Builder->SetInsertPoint(basicBlock);
     NamedValues.clear();
     for (auto &arg : func->args()) {
       NamedValues[std::string(arg.getName())] = &arg;
     }
     if (llvm::Value *ret = Body->codegen()) {
-      if (Proto->getName() == "main") {
-        // main function will return int value
-        ret = Builder.CreateFPToSI(ret, llvm::Type::getInt32Ty(TheContext));
-      }
-      Builder.CreateRet(ret);
+      Builder->CreateRet(ret);
       bool result = llvm::verifyFunction(*func);
       std::cout << "verify result: " << result << std::endl;
       manager.run(*func);

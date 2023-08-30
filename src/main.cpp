@@ -94,8 +94,8 @@ static std::unique_ptr<FunctionAST>
 parseToplevelAST(std::function<char()> getchar) {
 
   if (auto expression = parseExpression(getchar)) {
-    auto Proto =
-        std::make_unique<PrototypeAST>("main", std::vector<std::string>());
+    auto Proto = std::make_unique<PrototypeAST>("__anon_expr",
+                                                std::vector<std::string>());
     return std::make_unique<FunctionAST>(std::move(Proto),
                                          std::move(expression));
   }
@@ -128,7 +128,7 @@ static void driver(std::function<char()> getchar) {
     default: {
       auto function = parseToplevelAST(getchar);
       function->codegen();
-      // TheModule.print(llvm::errs(), nullptr);
+      TheModule->print(llvm::errs(), nullptr);
       if (function) {
         function->getText();
       }
@@ -342,32 +342,26 @@ int driverParse() {
 
 static llvm::ExitOnError ExitOnErr;
 
-#include <llvm/ExecutionEngine/JITSymbol.h>
-int main(int, char **) {
+void compileAndCallJIT(){
+  TheContext = std::make_unique<llvm::LLVMContext>();
+  TheModule = std::make_unique<llvm::Module>("my cool jit", *TheContext);
+  Builder = std::make_unique<llvm::IRBuilder<>>(*TheContext);
+
   TheJIT = ExitOnErr(llvm::orc::KaleidoscopeJIT::Create());
-  TheModule.setDataLayout(TheJIT->getDataLayout());
+  TheModule->setDataLayout(TheJIT->getDataLayout());
   driverParse();
   auto resourceTracker = TheJIT->getMainJITDylib().createResourceTracker();
-  TheJIT->addModule(llvm::orc::ThreadSafeModule(
-      std::unique_ptr<llvm::Module>(&TheModule),
-      std::unique_ptr<llvm::LLVMContext>(&TheContext)),
-      resourceTracker);
-  auto mainSym = TheJIT->lookup("main");
-  // int (*callable)() = mainSym.get().getAddress()
-  // llvm::jitTargetAddressToPointer()
-  // llvm::ji
-  auto mainPtr = mainSym.get().getAddress();
-  auto jitFunc = llvm::jitTargetAddressToFunction<int(*)()>(mainPtr);
-  int returnVal = jitFunc();
-  std::cout << returnVal << std::endl;
-  
+  ExitOnErr(TheJIT->addModule(
+      llvm::orc::ThreadSafeModule(std::move(TheModule), std::move(TheContext)),
+      resourceTracker));
+  auto ExprSymbol = ExitOnErr(TheJIT->lookup("__anon_expr"));
+  auto mainPtr = (double (*)())(intptr_t)ExprSymbol.getAddress();
+  int returnVal = mainPtr();
+  std::cout << "jit compiler result: " << returnVal << std::endl;
+}
 
-  // llvm::InitializeNativeTarget();
-  // llvm::InitializeNativeTargetAsmPrinter();
-  // llvm::InitializeNativeTargetAsmParser();
-  // std::error_code EC;
-  // llvm::raw_fd_ostream ostream("executable", EC, llvm::sys::fs::OF_None);
-  // llvm::WriteBitcodeToFile(TheModule, ostream);
-  // ostream.flush();
+#include <llvm/ExecutionEngine/JITSymbol.h>
+int main(int, char **) {
+  compileAndCallJIT();
   return 0;
 }
