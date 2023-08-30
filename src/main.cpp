@@ -319,7 +319,12 @@ int precedenceParse() {
 
 int driverParse() {
   std::stringstream contentStream;
-  contentStream << "def fib(x) 2 * x + 10 + 5 ; fib(42);\n";
+  std::string sourceCode = R"(
+    def fib(x) 
+      2 * x ;
+    fib(42);
+  )";
+  contentStream << sourceCode;
   contentStream << static_cast<char>(EOF);
   std::string str = contentStream.str();
   int pos = 0;

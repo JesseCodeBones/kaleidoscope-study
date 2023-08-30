@@ -1,3 +1,5 @@
+### 创建工具类
+```C++
 //===- KaleidoscopeJIT.h - A simple JIT for Kaleidoscope --------*- C++ -*-===//
 //
 // Part of the LLVM Project, under the Apache License v2.0 with LLVM Exceptions.
@@ -26,7 +28,6 @@
 #include "llvm/IR/DataLayout.h"
 #include "llvm/IR/LLVMContext.h"
 #include "llvm/MC/TargetRegistry.h"
-#include <llvm/Support/TargetSelect.h>
 #include <iostream>
 #include <llvm-c/Target.h>
 #include <memory>
@@ -78,16 +79,11 @@ public:
 
     auto Triple = ES->getExecutorProcessControl().getTargetTriple();
     std::cout << Triple.str() << std::endl;
-    // register all targets
-    // LLVMInitializeAllTargetInfos();
-    // LLVMInitializeAllTargets();
-    // LLVMInitializeAllTargetMCs();
-    // LLVMInitializeAllAsmPrinters();
-    // LLVMInitializeAllAsmParsers();
-    InitializeNativeTarget();
-    InitializeNativeTargetAsmPrinter();
-    InitializeNativeTargetAsmParser();
-
+    LLVMInitializeAllTargetInfos();
+    LLVMInitializeAllTargets();
+    LLVMInitializeAllTargetMCs();
+    LLVMInitializeAllAsmPrinters();
+    LLVMInitializeAllAsmParsers();
     // TargetRegistry::RegisterTarget(llvm::get);
 
     JITTargetMachineBuilder JTMB(Triple);
@@ -121,3 +117,30 @@ public:
 } // end namespace llvm
 
 #endif // LLVM_EXECUTIONENGINE_ORC_KALEIDOSCOPEJIT_H
+
+```
+
+这里需要注意的是，要注册相应的target。  
+```C++
+LLVMInitializeAllTargetInfos();
+LLVMInitializeAllTargets();
+LLVMInitializeAllTargetMCs();
+LLVMInitializeAllAsmPrinters();
+LLVMInitializeAllAsmParsers();
+```
+
+### JIT接收module并且生成可执行代码
+```C++
+  TheJIT = ExitOnErr(llvm::orc::KaleidoscopeJIT::Create());
+  TheModule->setDataLayout(TheJIT->getDataLayout());
+  driverParse();
+  auto resourceTracker = TheJIT->getMainJITDylib().createResourceTracker();
+  ExitOnErr(TheJIT->addModule(
+      llvm::orc::ThreadSafeModule(std::move(TheModule), std::move(TheContext)),
+      resourceTracker));
+  auto ExprSymbol = ExitOnErr(TheJIT->lookup("__anon_expr"));
+  auto mainPtr = (double (*)())(intptr_t)ExprSymbol.getAddress();
+  int returnVal = mainPtr();
+  std::cout << "jit compiler result: " << returnVal << std::endl;
+```
+
